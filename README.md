@@ -75,3 +75,52 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
   Press RETURN to continue or any other key to abort
 ```
+1. Press RETURN to continue or any other key to abort に従いRETURNキーを押下
+1. パスワードの入力を求められるのでmacのパスワードを入力
+1. 最後に`successfull!`と表示されるのを確認
+1. `brew -v`もしくは`brew help`を入力
+1. `command not found`と表示されたら正常にインストールされていないので手順確認
+
+## ★composer
+
+### Description
+phpのパッケージ依存管理システム  
+php開発において必要なパッケージを一括で管理してくれるよ
+
+### install
+1. iterm2を起動
+1. `brew install composer`
+1. 表示を確認
+```php
+==> Downloading https://getcomposer.org/download/1.8.4/composer.phar
+######################################################################## 100.0%
+🍺  /usr/local/Cellar/composer/1.8.4: 3 files, 1.8MB, built in 21 seconds
+```
+1. `composer -v`
+1. 表示を確認
+```php
+$ composer -v
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.8.4 2019-02-11 10:52:10
+```
+
+## ★GitHub
+### Description
+Git＝バージョン管理システム  
+誰が、いつ、どんな目的でソースを修正したのか一括管理できます  
+トレーニングではあなたのリモートレポジトリ(training-name)をローカルレポジトリにクローンし、  
+課題ごとにローカルレポジトリからリモートレポジトリにPushしてもらいます  
+参考資料：https://backlog.com/ja/git-tutorial/intro/02
+
+### Hands on & tutorial
+1. アカウントの作成  
+https://github.com/  
+※slackと同じユーザ名にしてください  既にアカウントがある場合は名前を変更するかslackの名前を変更
+1. アカウントをデストラクタのGitHubに追加申請をする
+1. リモートレポジトリと自分のローカルを連携させるため鍵を生成  
+参考資料：「SSHとは」　https://www.kagoya.jp/howto/rentalserver/ssh/
