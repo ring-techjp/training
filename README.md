@@ -118,9 +118,21 @@ Git＝バージョン管理システム
 参考資料：https://backlog.com/ja/git-tutorial/intro/02
 
 ### Hands on & tutorial
-1. アカウントの作成  
+**アカウントの作成**  
 https://github.com/  
 ※slackと同じユーザ名にしてください  既にアカウントがある場合は名前を変更するかslackの名前を変更
 1. アカウントをデストラクタのGitHubに追加申請をする
 1. リモートレポジトリと自分のローカルを連携させるため鍵を生成  
-参考資料：「SSHとは」　https://www.kagoya.jp/howto/rentalserver/ssh/
+参考資料：「SSHとは」　https://www.kagoya.jp/howto/rentalserver/ssh/  
+**鍵の生成**   
+`$ssh-keygen -t rsa`  
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+```
+1. 3回ほどEnter押下
+1. id_rsaとid_rsa.pubの2つの鍵が生成される  　
+これが秘密鍵（id_rsa）と公開鍵(id_rsa.pub)。秘密鍵は基本自分しか持っちゃダメです
+
