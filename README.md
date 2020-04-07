@@ -216,6 +216,7 @@ https://netbeans.apache.org/download/index.html
 ## ★Options
 
 ### Description
-ghqとは 予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
+1.ghq  
+予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
 ### install
 1. `brew install ghq`
