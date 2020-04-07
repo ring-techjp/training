@@ -211,7 +211,7 @@ https://netbeans.apache.org/download/index.html
 1. `php -v`  
 バージョンが確認できたら正常にインストール完了
 1. パスを通す  
-`export PATH="/usr/local/opt/php@7.2/bin:$PATH`
+`export PATH="/usr/local/opt/php@7.--/bin:$PATH`
 
 ## ★Options
 
