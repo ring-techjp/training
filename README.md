@@ -212,3 +212,10 @@ https://netbeans.apache.org/download/index.html
 バージョンが確認できたら正常にインストール完了
 1. パスを通す  
 `export PATH="/usr/local/opt/php@7.2/bin:$PATH`
+
+## ★Options
+
+### Description
+ghqとは 予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
+### install
+1. `brew install ghq`
