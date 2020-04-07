@@ -171,3 +171,44 @@ git push origin HEAD
 git push origin ブランチ名 
 #コミットをリモートにpushする。HEADと記述するとわざわざブランチ名を書かなくてよくなる
 ```
+
+## ★NetBeans
+### Description
+NetBeansはオープンソースの統合開発環境（IDE）
+JavaやPHP、フレームワークが標準で対応している
+他のIDEを使用する場合は個人で拡張するなど行ってください
+
+### install
+1. Open JDKをインストール  
+https://jdk.java.net/12/  
+今回はVer12をインストールしますが適当なバージョンをインストールしてください
+
+1. macOS/x64を選択
+1. NetBeansをインストール  
+https://netbeans.apache.org/download/index.html
+1. 表示画面に
+1. NetBeansをしたがってインストール
+1. 起動確認  
+起動できない場合はJavaがうまく入っていない可能性があるので確認してください
+
+## ★MySQL
+
+### Description
+データベース管理システム
+
+### install
+1. iterm2を起動
+1. `brew update`
+1. `brew install mysql`
+1. `brew info mysql`でインストールを確認
+
+## ★PHP
+
+### install
+1. iterm2を起動
+1. `brew install php@7.--`  
+バージョンは最新のものを指定
+1. `php -v`  
+バージョンが確認できたら正常にインストール完了
+1. パスを通す  
+`export PATH="/usr/local/opt/php@7.2/bin:$PATH`
