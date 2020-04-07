@@ -79,7 +79,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 1. パスワードの入力を求められるのでmacのパスワードを入力
 1. 最後に`successfull!`と表示されるのを確認
 1. `brew -v`もしくは`brew help`を入力
-1. `command not found`と表示されたら正常にインストールされていないので手順確認
+1. `command not found`と表示されたら正常に**インストールされていない**ので手順確認
 
 ## ★composer
 
