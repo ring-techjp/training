@@ -117,14 +117,16 @@ Git＝バージョン管理システム
 課題ごとにローカルレポジトリからリモートレポジトリにPushしてもらいます  
 参考資料：https://backlog.com/ja/git-tutorial/intro/02
 
-### Hands on & tutorial
-**アカウントの作成**  
+### Hands On
+**◇アカウントの作成◇**  
 https://github.com/  
 ※slackと同じユーザ名にしてください  既にアカウントがある場合は名前を変更するかslackの名前を変更
 1. アカウントをデストラクタのGitHubに追加申請をする
 1. リモートレポジトリと自分のローカルを連携させるため鍵を生成  
-参考資料：「SSHとは」　https://www.kagoya.jp/howto/rentalserver/ssh/  
-**鍵の生成**   
+参考資料：「SSHとは」　https://www.kagoya.jp/howto/rentalserver/ssh/
+
+
+**◇鍵の生成◇**  
 `$ssh-keygen -t rsa`  
 ```
 Generating public/private rsa key pair.
@@ -133,6 +135,39 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 1. 3回ほどEnter押下
-1. id_rsaとid_rsa.pubの2つの鍵が生成される  　
+1. id_rsaとid_rsa.pubの2つの鍵が生成される  
 これが秘密鍵（id_rsa）と公開鍵(id_rsa.pub)。秘密鍵は基本自分しか持っちゃダメです
 
+**◇公開鍵をGitHubにアップ◇**
+1. https://github.com/settings/keys  
+New SSH keyをクリックして公開鍵（id_rsa.pub）の中身をコピペする  
+```php
+$cd ~/.ssh
+$cat id_rsa.pub
+```
+1. titleはなんでもよし　わかりやすいやつで
+**ローカルレポジトリを作成**  
+1. iterm2を起動し、ディレクトリを作成(名前は任意だがリモートレポジトリとオンジ名前にするなどわかりやすいように指定)  
+`mhdir project`
+1. レポジトリに移動  
+`cd project`
+1. `git clone git@github.com:destructorjp/(用意されているレポジトリ)`
+
+### Tutorial
+1. iterm2でプロジェクトに移動
+1. `git branch -a #今いるブランチを確認 (-aをつけることでリモートブランチも見れる)`
+1. `git branch ブランチ名　#ブランチ作成`
+1. `git checkout -b ブランチ名 #ブランチ移動  (-bをつける事で新規にブランチを作成し移動)`  
+※課題ごとにブランチを切っていく
+1. 適当にファイルを作成(あとで削除しといてください)  
+`touch test.txt`
+1. `git status #ファイルの編集状態確認`
+1. `git add . #コミットしたいファイル追加`
+1. `git commit -m "コミットコメント" #addしたファイルをコミット`
+1. コミットしたファイルをリモートブランチにpushする  
+```
+git push origin HEAD 
+        or
+git push origin ブランチ名 
+#コミットをリモートにpushする。HEADと記述するとわざわざブランチ名を書かなくてよくなる
+```
