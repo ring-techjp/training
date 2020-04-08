@@ -220,3 +220,16 @@ https://netbeans.apache.org/download/index.html
 予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
 ### install
 1. `brew install ghq`
+
+## ★Docker
+### Description
+dockerとはコンテナ上で仮想環境を構築し、ミドルウェアやOSを動かす仕組みのこと  
+参考資料：https://kitsune.blog/docker-summary
+### install
+1. 下記にアクセスしてdmgファイルをダウンロード
+https://hub.docker.com/editions/community/docker-ce-desktop-mac
+1. ダウンロードを完了したらインストール
+
+### tutorial
+1. dockerアプロケーションを起動
+1. 画面右上にdockerのマークが表示されることを確認
