@@ -212,15 +212,6 @@ https://netbeans.apache.org/download/index.html
 バージョンが確認できたら正常にインストール完了
 1. パスを通す  
 `export PATH="/usr/local/opt/php@7.--/bin:$PATH`
-
-## ★Options
-
-### Description
-1. ghq  
-予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
-### install
-1. `brew install ghq`
-
 ## ★Docker
 ### Description
 dockerとはコンテナ上で仮想環境を構築し、ミドルウェアやOSを動かす仕組みのこと  
@@ -233,3 +224,12 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 ### tutorial
 1. dockerアプロケーションを起動
 1. 画面右上にdockerのマークが表示されることを確認
+## ★Options
+
+### Description
+1. ghq  
+予め設定したディレクトリ以下にgitリポジトリをクローンし、一元管理することが出来るツール
+### install
+1. `brew install ghq`
+
+
