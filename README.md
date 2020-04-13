@@ -147,7 +147,7 @@ $cat id_rsa.pub
 ```
 1. titleはなんでもよし　わかりやすいやつで
 
-### Tutorial
+### ◆Tutorial-fork,commit,push,pull Request
 研修中のレポジトリの運用について  
 gitのフォークを使用します。  
 参考 ： https://qiita.com/matsubox/items/09904e4c51e6bc267990  
@@ -166,7 +166,6 @@ gitのフォークを使用します。
 `cd ../`  
 `ls`  
 
-※課題ごとにブランチを切っていく
 1. 適当にファイルを作成(あとで削除しといてください)  
 `touch test.txt`
 1. `git status #ファイルの編集状態確認`
@@ -186,6 +185,20 @@ git push origin ブランチ名
 1. 画面中央左寄りに「New Pull Request」があるのでクリック
 1. コミットしたメッセージが表示されるので、その内容に対するリクエスト（改修内容や追加した機能、見て欲しいところ）などを記述し送信する
 
+### ◆tutorial-branch
+課題はブランチごとに管理していきます  
+ブランチとは？参考 : https://www.sejuku.net/blog/71071  
+
+1. iterm2でローカルtrainingへ移動　`cd training`
+1. 現在のブランチを確認 
+`git branch`
+1. 対象のブランチがある場合
+`git checkout [branch_name] //ブランチ移動`
+`git branch　//現在のブランチを確認`
+1. 対象のブランチがない場合
+`git branch [branch_name] //新規ブランチを作成`
+`git checkout [branch_name] //ブランチ移動`
+`git branch //現在のブランチを確認`
 
 ## ★NetBeans
 ### Description
