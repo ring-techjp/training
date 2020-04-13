@@ -146,18 +146,26 @@ $cd ~/.ssh
 $cat id_rsa.pub
 ```
 1. titleはなんでもよし　わかりやすいやつで
-**ローカルレポジトリを作成**  
-1. iterm2を起動し、ディレクトリを作成(名前は任意だがリモートレポジトリとオンジ名前にするなどわかりやすいように指定)  
-`mhdir project`
-1. レポジトリに移動  
-`cd project`
-1. `git clone git@github.com:destructorjp/(用意されているレポジトリ)`
 
 ### Tutorial
-1. iterm2でプロジェクトに移動
-1. `git branch -a #今いるブランチを確認 (-aをつけることでリモートブランチも見れる)`
-1. `git branch ブランチ名　#ブランチ作成`
-1. `git checkout -b ブランチ名 #ブランチ移動  (-bをつける事で新規にブランチを作成し移動)`  
+研修中のレポジトリの運用について  
+gitのフォークを使用します。  
+参考 ： https://qiita.com/matsubox/items/09904e4c51e6bc267990  
+
+1. GitHubのdestruacter/trainingへアクセス
+1. ページ右上のForkをクリック
+1. 自分のアカウントを選択
+1. 自分のGitHubにtrainingレポジトリが追加されることを確認
+1. 自分のGitHub上のtrainingレポジトリをローカルにクローン  
+
+1. iterm2を起
+1. ローカルにクローン  
+`git clone https://github.com/[自分のGitHub]/training.git`
+
+1. ローカルでクローンされたか確認  
+`cd ../`  
+`ls`  
+
 ※課題ごとにブランチを切っていく
 1. 適当にファイルを作成(あとで削除しといてください)  
 `touch test.txt`
@@ -171,6 +179,13 @@ git push origin HEAD
 git push origin ブランチ名 
 #コミットをリモートにpushする。HEADと記述するとわざわざブランチ名を書かなくてよくなる
 ```
+※pushしたらプルリクを
+自分のGitHug/trainingにはpushした内容が反映されています  
+コードレビューはそれをさらにdestructer/trainingへプルリク することで行われます  
+1. 自分のGitHub/trainingのページにアクセス
+1. 画面中央左寄りに「New Pull Request」があるのでクリック
+1. コミットしたメッセージが表示されるので、その内容に対するリクエスト（改修内容や追加した機能、見て欲しいところ）などを記述し送信する
+
 
 ## ★NetBeans
 ### Description
