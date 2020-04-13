@@ -178,7 +178,7 @@ git push origin HEAD
 git push origin ブランチ名 
 #コミットをリモートにpushする。HEADと記述するとわざわざブランチ名を書かなくてよくなる
 ```
-※pushしたらプルリクを
+※pushしたらプルリクを  
 自分のGitHug/trainingにはpushした内容が反映されています  
 コードレビューはそれをさらにdestructer/trainingへプルリク することで行われます  
 1. 自分のGitHub/trainingのページにアクセス
