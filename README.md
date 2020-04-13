@@ -158,7 +158,7 @@ gitのフォークを使用します。
 1. 自分のGitHubにtrainingレポジトリが追加されることを確認
 1. 自分のGitHub上のtrainingレポジトリをローカルにクローン  
 
-1. iterm2を起
+1. iterm2を起動
 1. ローカルにクローン  
 `git clone https://github.com/[自分のGitHub]/training.git`
 
