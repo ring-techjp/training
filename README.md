@@ -192,13 +192,13 @@ git push origin ブランチ名
 1. iterm2でローカルtrainingへ移動　`cd training`
 1. 現在のブランチを確認 
 `git branch`
-1. 対象のブランチがある場合
-`git checkout [branch_name] //ブランチ移動`
-`git branch　//現在のブランチを確認`
-1. 対象のブランチがない場合
-`git branch [branch_name] //新規ブランチを作成`
-`git checkout [branch_name] //ブランチ移動`
-`git branch //現在のブランチを確認`
+1. 対象のブランチがある場合  
+`git checkout [branch_name] //ブランチ移動`  
+`git branch　//現在のブランチを確認`  
+1. 対象のブランチがない場合  
+`git branch [branch_name] //新規ブランチを作成`  
+`git checkout [branch_name] //ブランチ移動`  
+`git branch //現在のブランチを確認`  
 
 ## ★NetBeans
 ### Description
