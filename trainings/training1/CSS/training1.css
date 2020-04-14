@@ -10,7 +10,7 @@ main{
     flex-direction: column;
 }
 
-.l-box1{
+.l-box1, .l-box4{
     display: flex;
     height: 70px;
     margin: 5px;
@@ -29,7 +29,7 @@ main{
     flex-grow: 3;
 }
 
-.s-box1{
+.s-box1, .s-box2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,12 +52,6 @@ main{
     flex-grow: 1;
 }
 
-.s-box2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .c-box2{
     margin: 5px;
     display: flex;
@@ -76,14 +70,6 @@ main{
     width: 100%;
 }
 
-.l-box4{
-    display: flex;
-    height: 70px;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-}
-
 .r-main{
     margin-left: 40px;
     width: 40%;
@@ -99,16 +85,12 @@ main{
     justify-content: center;
 }
 
-.r-box:nth-child(1){
+.r-box:nth-child(1), .r-box:nth-child(6){
     height: 50px;
 }
 
 .r-box:nth-child(2){
     height: 350px;
-}
-
-.r-box:nth-child(6){
-    height: 50px;
 }
 
 .clr1{
