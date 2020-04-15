@@ -4,7 +4,7 @@
 (すでにやっている作業はスキップしてね！)
  
 ## ☆Fork
-#### Description
+### Description
 フォークとは、共有ワークスペース（destructer）にあるレポジトリを自分のGutHub上にコピーする機能です。  
 * destructer/traningへアクセス
 * 画面右上寄りにある**Fork**というボタンを押下  
@@ -24,7 +24,7 @@
   
 
 ## ☆Clone
-#### Description
+### Description
 実際の作業は自分のGitHub上のレポジトリをさらに**ローカル**にコピーし行います。  
 鍵の設定ができていない場合はREADME1.mdへ戻って設定してください。
 * 画面右上寄りにある**clone**をクリック
@@ -46,7 +46,7 @@
 <img width="646" alt="スクリーンショット 2020-04-15 16 05 35" src="https://user-images.githubusercontent.com/48113599/79308118-fbee1d00-7f32-11ea-9280-0847fe334cdf.png">
 
 ## ★Branch & Checkout
-#### Description
+### Description
 課題は、課題ごとのブランチを切ってそのブランチ上で作業していただきます。  
 今回はdestructer/practice001に課題をプッシュすると仮定し、ローカルにもpractice001というブランチを作成します。（課題ごとのブランチはdestracter/trainingに作成してあります）  
 
