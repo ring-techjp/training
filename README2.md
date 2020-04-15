@@ -14,7 +14,7 @@
 <img width="1040" alt="スクリーンショット 2020-04-15 15 35 04" src="https://user-images.githubusercontent.com/48113599/79307398-cd237700-7f31-11ea-90d1-8d3ed68b6578.png">
 
 * こんな画面が出るから待機
-<img width="1040" alt="スクリーンショット 2020-04-15 15 35 04" src="https://user-images.githubusercontent.com/48113599/79305671-cc3d1600-7f2e-11ea-8bc1-5756f86245a0.png">  
+<img width="1027" alt="スクリーンショット 2020-04-15 15 39 59" src="https://user-images.githubusercontent.com/48113599/79307558-0a880480-7f32-11ea-8153-aed6ec6d0b0e.png"> 
 
 * **自分のGitHubにtrainingレポジトリができた**ことを確認
 <img width="1013" alt="スクリーンショット 2020-04-15 15 41 12" src="https://user-images.githubusercontent.com/48113599/79306115-a3695080-7f2f-11ea-8fe9-65d971fca012.png">
