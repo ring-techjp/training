@@ -10,15 +10,30 @@
 * 画面右上寄りにある**Fork**というボタンを押下  
 <img width="900" alt="スクリーンショット 2020-04-15 15 24 58" src="https://user-images.githubusercontent.com/48113599/79305212-ee826400-7f2d-11ea-90a3-c7e3f1df5342.png">  
 
-* **destructer/traning**へアクセス
-<img width="1040" alt="スクリーンショット 2020-04-15 15 35 04" src="https://user-images.githubusercontent.com/48113599/79305671-cc3d1600-7f2e-11ea-8bc1-5756f86245a0.png">  
+* **自分のレポジトリ**を選択
+<img width="1040" alt="スクリーンショット 2020-04-15 15 35 04" src="https://user-images.githubusercontent.com/48113599/79307398-cd237700-7f31-11ea-90d1-8d3ed68b6578.png">
 
-* こんな画面
-<img width="1027" alt="スクリーンショット 2020-04-15 15 39 59" src="https://user-images.githubusercontent.com/48113599/79306026-70bf5800-7f2f-11ea-8e50-fbb48debee08.png">
+* こんな画面が出るから待機
+<img width="1040" alt="スクリーンショット 2020-04-15 15 35 04" src="https://user-images.githubusercontent.com/48113599/79305671-cc3d1600-7f2e-11ea-8bc1-5756f86245a0.png">  
 
 * **自分のGitHubにtrainingレポジトリができた**ことを確認
 <img width="1013" alt="スクリーンショット 2020-04-15 15 41 12" src="https://user-images.githubusercontent.com/48113599/79306115-a3695080-7f2f-11ea-8fe9-65d971fca012.png">
 
+## ☆Clone
+#### Description
+実際の作業は自分のGitHub上のレポジトリをさらに**ローカル**にコピーし行います。  
+鍵の設定ができていない場合はREADME1.mdへ戻って設定してください。
+* 画面右上寄りにある**clone**をクリック
+<img width="1024" alt="スクリーンショット 2020-04-15 15 46 44" src="https://user-images.githubusercontent.com/48113599/79306589-74071380-7f30-11ea-9769-e328b026d5d9.png">
+
+* コピー
+<img width="451" alt="スクリーンショット 2020-04-15 15 48 11" src="https://user-images.githubusercontent.com/48113599/79306646-926d0f00-7f30-11ea-94d5-243ac24e9fae.png">
+
+* GitBushもしくはIterm2（ターミナルが開けるツール）を起動してクローンするディレクトリを作成  
+  `mkdir training`  ★trainingというディレクトリを作成(画像はdemoとなってますがスルーしてください)  
+  `cd training`　★trainingディレクトリに移動  
+  `pwd`　★自分の現在いるディレクトリを表示（この場合trainingが表示されれば合ってます）  
+<img width="553" alt="スクリーンショット 2020-04-15 15 55 25" src="https://user-images.githubusercontent.com/48113599/79307232-8d5c8f80-7f31-11ea-9bca-7b841d357530.png">
 
 
 
