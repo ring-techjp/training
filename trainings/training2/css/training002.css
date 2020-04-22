@@ -131,8 +131,7 @@ li{
     background-color: #ffffff;
     border-top: 8px solid #ff4500;
 }
-.main_sellingPoint_box:nth-child(1), .main_sellingPoint_box:nth-child(2),
-.main_sellingPoint_box:nth-child(3){
+.main_sellingPoint_box{
     padding: 45px 0 50px 0;
 }
 .main_sellingPoint_box img{
@@ -152,14 +151,11 @@ li{
     font-size: 20px;
     color: #ff4500;
 }
-.main_sellingPoint_box:nth-child(1){
-    margin: -8px 15px 0 0;
-}
-.main_sellingPoint_box:nth-child(2){
-    margin: -8px 15px 0 15px;
+.main_sellingPoint_box{
+    margin: -8px 30px 0 0;
 }
 .main_sellingPoint_box:nth-child(3){
-    margin: -8px 0 0 15px;
+    margin-right: 0px;
 }
 .main_sellingPoint_txt{
     width: 100%;
@@ -463,13 +459,15 @@ li{
     background-color: #d6ffad;
 }
 .main_managementMember_box_sub{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 170px;
+    height: 70px;
     position: absolute;
     top: 265px;
     right: 24px;
-    padding: 15px 0 15px 0;
-    text-align: center;
     border-radius: 7px 7px;
     background-color: #eeeeee;
 }
@@ -750,13 +748,15 @@ ul.main_buildMarket_box li:nth-child(5){
     margin-right: -40px;
 }
 .main_companyShare_box_sub{
-    display: block;
-    width: 200px;
-    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
     position: absolute;
     top: 160px;
-    right: 38px;
-    padding: 15px 5px 15px 25px;
+    right: 28px;
     border-radius: 7px 7px;
     color: #808080;
     background-color: #f3f3f3;
