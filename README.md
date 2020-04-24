@@ -16,6 +16,14 @@
 ### tutorial
 作業開始というコメントをチャンネルに投稿
 
+## ★Alfred
+コマンドoption+spaceで起動します  
+ツール等を素早く呼び出せますのでご自分でカスタマイズしてみてください  
+
+### install
+https://www.alfredapp.com/
+
+
 ## ★iterm2
 https://www.iterm2.com/
 
