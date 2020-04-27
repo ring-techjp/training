@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "f0dcbdc80776ca79d6311b8f92c5a4b5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -504,6 +504,12 @@
                 "crossdomain",
                 "laravel"
             ],
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
             "time": "2020-03-11T21:05:07+00:00"
         },
         {
@@ -697,16 +703,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.7.1",
+            "version": "v7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4de129177f889cd7672e732d8808020adfb7b121"
+                "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4de129177f889cd7672e732d8808020adfb7b121",
-                "reference": "4de129177f889cd7672e732d8808020adfb7b121",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
+                "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
                 "shasum": ""
             },
             "require": {
@@ -845,7 +851,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-04-21T18:57:12+00:00"
+            "time": "2020-04-24T17:21:56+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -912,17 +918,72 @@
             "time": "2020-04-07T15:01:31+00:00"
         },
         {
-            "name": "league/commonmark",
-            "version": "1.4.1",
+            "name": "laravel/ui",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "c995966d35424bae20f76f8b31248099487a3f57"
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c995966d35424bae20f76f8b31248099487a3f57",
-                "reference": "c995966d35424bae20f76f8b31248099487a3f57",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
+                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^7.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "time": "2020-03-03T20:16:46+00:00"
+        },
+        {
+            "name": "league/commonmark",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/9e780d972185e4f737a03bade0fd34a9e67bbf31",
+                "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31",
                 "shasum": ""
             },
             "require": {
@@ -1009,7 +1070,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-20T13:36:51+00:00"
+            "time": "2020-04-24T13:39:56+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2197,6 +2258,20 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-30T14:14:32+00:00"
         },
         {
@@ -2642,6 +2717,20 @@
             "keywords": [
                 "mime",
                 "mime-type"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-03-27T16:56:45+00:00"
         },
@@ -3697,6 +3786,24 @@
                 "ascii",
                 "clean",
                 "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/portable-ascii",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-03-13T01:23:26+00:00"
         }
