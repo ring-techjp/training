@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Validator;
 use App\Task;
+use Auth;
 
 class TasksController extends Controller
 {
@@ -14,9 +15,15 @@ class TasksController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+      $this->middleware('auth');
+    }
+  
     public function index()
     {
-        $tasks = Task::orderBy('deadline', 'asc')->get();
+        $tasks = Task::where('user_id', Auth::user()->id)
+          ->orderBy('deadline', 'asc')
+          ->get();
         return view('tasks', [
           'tasks' => $tasks
         ]);
@@ -43,6 +50,7 @@ class TasksController extends Controller
         // バリデーション
         $validator = Validator::make($request->all(),[
           'task' => 'required|max:255',
+          'deadline' => 'required',
         ]);
         // バリデーション:エラー
         if($validator->fails()){
@@ -53,9 +61,10 @@ class TasksController extends Controller
         }
         // Eloquentモデル
         $task = new Task;
+        $task->user_id = Auth::user()->id;
         $task->task = $request->task;
-        $task->deadline = '2019-10-21';
-        $task->comment = 'todo!';
+        $task->deadline = $request->deadline;
+        $task->comment = $request->comment;
         $task->save();
         // ルーティング「task.index」にリクエスト送信(一覧ページに移動)
         return redirect()->route('tasks.index');
@@ -80,7 +89,8 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
-        //
+        $task = Task::find($id);
+        return view('taskedit', ['task' => $task]);
     }
 
     /**
@@ -92,7 +102,27 @@ class TasksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // バリデーション
+        $validator = Validator::make($request->all(), [
+          'task' => 'required|max:255',
+          'deadline' => 'required',
+        ]);
+      
+        // バリデーション:エラー
+        if($validator->fails()){
+          return redirect()
+            ->route('tasks.edit', $id)
+            ->withInput()
+            ->withErrors($validator);
+        }
+      
+        // データ更新処理
+        $task = Task::find($id);
+        $task->task = $request->task;
+        $task->deadline = $request->deadline;
+        $task->comment = $request->comment;
+        $task->save();
+        return redirect()->route('tasks.index');
     }
 
     /**

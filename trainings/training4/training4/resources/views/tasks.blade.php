@@ -49,6 +49,8 @@
         <!-- テーブルヘッダー -->
         <thead>
           <th>タスク</th>
+          <th>締め切り</th>
+          <th>コメント</th>
         </thead>
         <!-- テーブル本体 -->
         <tbody>
@@ -57,8 +59,22 @@
             <td class="table-text">
               <div>{{ $task->task }}</div>
             </td>
+            <td class="table-text">
+              <div>{{ $task->deadline }}</div>
+            </td>
+            <td class="table-text">
+              <div>{{ $task->comment }}</div>
+            </td>
             <td>
-              <!-- 削除ボタン -->
+            <!-- 更新ボタン -->
+              <form action="{{ route('tasks.edit', $task->id) }}" method="get">
+                @csrf
+                <button type="submit" class="btn btn-primary">更新</button>
+              </form>
+            <td>
+            </td>
+            <td>
+            <!-- 削除ボタン -->
               <form action="{{ route('tasks.destroy', $task->id) }}" method="POST">
                 @method('delete')
                 @csrf
