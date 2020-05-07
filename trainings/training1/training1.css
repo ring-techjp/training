@@ -1,0 +1,11 @@
+.flexbox{
+	display:grid;
+	gap:10px;
+	grid-template-columns:1fr 1fr 1fr 2fr;
+	grid-template-rows:35px 150px 50px 75px 50px;
+}
+
+.item{
+	padding:10px;
+}
+
