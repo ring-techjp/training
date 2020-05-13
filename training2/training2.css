@@ -4,8 +4,8 @@
     padding: 0;
 }
 
-li{
-    list-style: none;
+p{
+    font-size: 10px;
 }
 
 header{
@@ -24,14 +24,19 @@ header{
     height: 50px;
     background-color: #dcdcdc;
 }
+.header-logo{
+    height:50px;
+    margin: 0 300px 0 100px;
+}
 
 .header-list1{
     display: flex;
+    justify-content: center;
     height: 30px;
 }
 
 .main-contents{
-    height: 400px;
+    height: 300px;
     text-align: center;
     padding-top: 100px;
 }
@@ -50,6 +55,10 @@ header{
     flex-direction: column;
 }
 
+.main-text{
+    text-align: center;
+    margin: 30px 0;
+}
 span{
     color:red;   
     border-bottom: 1px solid red;
@@ -57,25 +66,186 @@ span{
 
 .contents1{
     display: flex;
+    background-color: #f5deb3;
+}
+
+.left-contents{
+    width: 50%;
+    text-align: center;
+}
+.right-contents{
+    width: 50%;
 }
 
 .text-box{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.title-box2 .title-box4 .title-box5 .title-box7 .title-box8 .title-box9 .title-box10{
+.box{
+    width:50%;
+}
+
+.contents2{
+    height: 200px;
+    background-color: #98fb98;
+}
+.title-box2{
     display: flex;
+    justify-content: center;
 }
 
 .text-box2{
     display: flex;
+    justify-content: space-around;
 }
 
 .text-card{
-    width:20px;
 }
 
-.graph-card{
+.contents3{
     display: flex;
-    width: 50%
+    background-color: lavender;
+}
+
+.graph-box{
+    display: flex;
+}
+.graph-card{
+    width: 50%;
+}
+
+.contents4{
+    background-color: darkgray;
+    
+}
+.title-box4{
+    display: flex;
+    justify-content: center;
+}
+.circle-box{
+    text-align: center;
+}
+
+.contents5{
+    display: flex;
+    background-color: #f0e68c;
+}
+
+.contents6{
+    background-color: salmon;
+}
+.title-box6{
+    display: flex;
+    justify-content: center;
+}
+.contentsbox{
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.contents7{
+    display: flex;
+    background-color: plum;
+}
+.circle-item-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.circle-item{
+    width: 50%;
+}
+
+.contents8{
+    background-color: lightyellow;
+}
+
+.title-box8{
+    display: flex;
+    justify-content: center;
+}
+.list{
+    display: flex;
+    justify-content:space-around;
+}
+.li{
+    list-style: none;
+}
+.slide-img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.img{
+    width: 25%;
+}
+.contents9{
+    background-color: lime;
+}
+.title-box9{
+    display: flex;
+    justify-content: center;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+.formbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formitem{
+    width: 49%;
+    /*margin等を使えば、50%okかも?*/
+}
+.contents10{
+    width: 80%;
+    margin: 0 auto;
+}
+.title-box10{
+    text-align: center;
+}
+.contents11{
+    width: 80%;
+    margin: 0 auto;
+}
+.title-box11{
+    display: flex;
+    justify-content: center;
+}
+.box-contents{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: gray;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+.footer-left{
+    width: 30%;
+}
+.footer-center{
+    width: 30%;
+}
+.center-box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-right{
+    width: 30%;
+}
+.links{
+    width: 50%;
+}
+.copy{
+    text-align: center;
+    height: 20px;
+    background-color: dimgray;
 }
