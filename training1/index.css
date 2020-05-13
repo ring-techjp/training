@@ -3,6 +3,7 @@ body{
     width: 100%;
     color: white;
     font-size: 25px;
+    text-align: center;
 }
 
 .leftmain{
@@ -23,26 +24,28 @@ body{
 
 .flexitem1{
     display: flex; 
+    justify-content: space-between;
+    height: 400px;
 }
 .flexitem2{
     display: flex;
+    justify-content: space-between;
 }
 .item1{
     height: 50px;
 }
 .item2{
-    flex-grow: 2;
-    height: 400px;
-    margin: 5px 5px 5px 0;
+    width: 67%;
+    margin: 5px 0 5px 0;
 }
 .item3{
-    flex-grow: 1;
-    margin: 5px 0 5px 0;
+    width: 33%;
+    margin: 5px 0 5px 5px;
     background-color: #ff9933;
 }
 
 .item5{
-    margin: 0 5px 0 5px;
+    margin: 0 5px;
 }
 
 .item7{
@@ -50,14 +53,14 @@ body{
     margin-top: 5px;
 }
 .item8{
-    height: 45px;
+    height: 40px;
 }
 .item9{
     height: 300px;
     margin-top: 5px;
 }
 .item13{
-    height: 45px;
+    height: 40px;
     margin-top: 5px;
 }
 .item4,.item5,.item6{
