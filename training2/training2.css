@@ -2,10 +2,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 p{
     font-size: 10px;
+}
+a{
+    color: white;
+    margin: 3px 5px;
+    text-decoration: none;
+}
+h1{
+    font-size:30px;
+}
+.line-left{
+    border-left: 1px solid;
+    padding-left: 5px;
 }
 
 header{
@@ -16,7 +29,16 @@ header{
 .header-top{
     display: flex;
     height: 20px;
-    background-color: #00ffff;
+    background-color: black;
+}
+.header-left{
+    flex-grow: 3;
+    margin-left: 50px;
+    color: white;
+}
+.header-right{
+    display: flex;
+    flex-grow: 1;
 }
 
 .header-main{
@@ -33,14 +55,27 @@ header{
     display: flex;
     justify-content: center;
     height: 30px;
+    background-color: black;
 }
 
 .main-contents{
     height: 300px;
     text-align: center;
     padding-top: 100px;
+    color: white;
+    background-color: dimgray;
 }
-
+.main-contents2{
+    background-color: whitesmoke;
+}
+.next{
+    background-color: tomato;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+}
 .main-contents-box{
     display: flex;
     justify-content: center;
@@ -49,8 +84,9 @@ header{
 
 .main-box-card{
     width: 20%;
-    margin-bottom: 20px;
-    background-color: #7fffd4;
+    margin:0 5px 20px 5px;
+    background-color: lightgray;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -66,7 +102,7 @@ span{
 
 .contents1{
     display: flex;
-    background-color: #f5deb3;
+    background-color: white;
 }
 
 .left-contents{
@@ -88,7 +124,8 @@ span{
 
 .contents2{
     height: 200px;
-    background-color: #98fb98;
+    color: white;
+    background-color:black ;
 }
 .title-box2{
     display: flex;
@@ -97,15 +134,19 @@ span{
 
 .text-box2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: black;
+    background-color: white;   
 }
 
 .text-card{
+    background-color: white;
+    padding: 10px;
 }
 
 .contents3{
     display: flex;
-    background-color: lavender;
+    background-color: white;
 }
 
 .graph-box{
@@ -116,7 +157,8 @@ span{
 }
 
 .contents4{
-    background-color: darkgray;
+    color: white;
+    background-color: black;
     
 }
 .title-box4{
@@ -129,11 +171,15 @@ span{
 
 .contents5{
     display: flex;
-    background-color: #f0e68c;
+    background-color: whitesmoke;
+}
+.form-text{
+    width: 50%;
 }
 
 .contents6{
-    background-color: salmon;
+    background-color: white;
+    height: 100px;
 }
 .title-box6{
     display: flex;
@@ -141,26 +187,36 @@ span{
 }
 .contentsbox{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.box-card{
+    margin: 0 10px;
+    border: 1px solid;
+    border-radius: 2px;
 }
 form{
     display: flex;
     flex-direction: column;
 }
 .contents7{
+    height: 200px;
     display: flex;
-    background-color: plum;
+    color: white;
+    background-color: black;
 }
 .circle-item-box{
     display: flex;
     flex-wrap: wrap;
 }
 .circle-item{
+    height: 100px;
     width: 50%;
+    background-color: #333;
+    border-radius: 50%;
 }
 
 .contents8{
-    background-color: lightyellow;
+    background-color: white;
 }
 
 .title-box8{
@@ -169,21 +225,24 @@ form{
 }
 .list{
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
 }
 .li{
     list-style: none;
+    margin-right: 20px;
 }
 .slide-img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 .img{
     width: 25%;
 }
 .contents9{
-    background-color: lime;
+    color: white;
+    background-color:black ;
 }
 .title-box9{
     display: flex;
@@ -196,17 +255,33 @@ form{
 .formbox{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 50px;
 }
 .formitem{
-    width: 49%;
+    width: 45%;
+    margin:0 15px 10px 0;
     /*margin等を使えば、50%okかも?*/
+}
+textarea{
+    width: 95%;
+}
+.visual{
+    background-color: white;
 }
 .contents10{
     width: 80%;
     margin: 0 auto;
+    color: white;
+    background-color: black;
 }
 .title-box10{
-    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.big{
+    border: initial;
+    color: white;
+    font-size: 50px;
 }
 .contents11{
     width: 80%;
@@ -220,12 +295,24 @@ form{
     display: flex;
     justify-content: space-around;
 }
+.card-box{
+    border: 1px solid;
+    border-radius: 2px;
+}
+.li2{
+    margin: 10px 50px 10px 0;
+    list-style: none;
+    opacity: 0.5;
+}
 footer{
-    background-color: gray;
+    color: white;
+    background-color: black;
+    padding-top: 40px;
 }
 .footer-list{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .footer-left{
     width: 30%;
@@ -236,13 +323,13 @@ footer{
 .center-box{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 .footer-right{
     width: 30%;
 }
 .links{
-    width: 50%;
+    width: 45%;
+    font-size:10px;
 }
 .copy{
     text-align: center;
