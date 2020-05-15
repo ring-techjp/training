@@ -21,45 +21,56 @@ h1{
     padding-left: 5px;
 }
 
-header{
-    height:100px;
-    width:100%;
-}
+
 
 .header-top{
     display: flex;
-    height: 20px;
+    padding: 10px;
     background-color: black;
 }
 .header-left{
     flex-grow: 3;
     margin-left: 50px;
     color: white;
+    font-size: 7px;
 }
 .header-right{
     display: flex;
     flex-grow: 1;
 }
-
+.header-right2{
+    display: flex;
+    margin:  10px 0;
+}
 .header-main{
     display: flex;
-    height: 50px;
     background-color: #dcdcdc;
+}
+.header-main2{
+    background-color: dimgray;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    
 }
 .header-logo{
     height:50px;
-    margin: 0 300px 0 100px;
+    margin: 0 400px 0 100px;
 }
 
 .header-list1{
     display: flex;
-    justify-content: center;
-    height: 30px;
+    justify-content: space-around;
+    width: 550px;
     background-color: black;
+}
+.header-li{
+    padding-top: 3px;
+    font-size: 5px;
 }
 
 .main-contents{
-    height: 300px;
+    height: 400px;
     text-align: center;
     padding-top: 100px;
     color: white;
@@ -67,14 +78,17 @@ header{
 }
 .main-contents2{
     background-color: whitesmoke;
+    padding-bottom: 20px;
 }
 .next{
     background-color: tomato;
     color: white;
     border-radius: 5px;
-    padding: 5px;
+    margin: 10px 0;
+    padding: 10px;
     text-align: center;
     font-size: 10px;
+    background:linear-gradient(90deg, #ff9872, #ff4f02);
 }
 .main-contents-box{
     display: flex;
@@ -85,6 +99,7 @@ header{
 .main-box-card{
     width: 20%;
     margin:0 5px 20px 5px;
+    padding: 20px;
     background-color: lightgray;
     text-align: center;
     display: flex;
@@ -103,6 +118,7 @@ span{
 .contents1{
     display: flex;
     background-color: white;
+    padding: 20px;
 }
 
 .left-contents{
@@ -111,6 +127,7 @@ span{
 }
 .right-contents{
     width: 50%;
+    
 }
 
 .text-box{
@@ -123,10 +140,11 @@ span{
 }
 
 .contents2{
-    height: 200px;
     color: white;
     background-color:black ;
+    padding: 20px;
 }
+
 .title-box2{
     display: flex;
     justify-content: center;
@@ -134,19 +152,21 @@ span{
 
 .text-box2{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: black;
-    background-color: white;   
+       
 }
 
 .text-card{
     background-color: white;
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
 }
 
 .contents3{
     display: flex;
     background-color: white;
+    padding: 20px;
 }
 
 .graph-box{
@@ -159,6 +179,7 @@ span{
 .contents4{
     color: white;
     background-color: black;
+    padding: 20px;
     
 }
 .title-box4{
@@ -172,14 +193,26 @@ span{
 .contents5{
     display: flex;
     background-color: whitesmoke;
+    padding: 20px;
+}
+.text-box3 p{
+    background-color: white;
+    margin: 5px 30px;
+    padding: 10px;
 }
 .form-text{
-    width: 50%;
+    width: 75%;
+}
+.formpuote{
+    margin: 5px;
+    padding: 10px;
+    opacity: 0.5;
 }
 
 .contents6{
     background-color: white;
-    height: 100px;
+    height: 200px;
+    padding: 20px;
 }
 .title-box6{
     display: flex;
@@ -189,20 +222,27 @@ span{
     display: flex;
     justify-content: center;
 }
+.contentsbox div{
+    
+    padding: 5px;
+    
+}
 .box-card{
     margin: 0 10px;
-    border: 1px solid;
     border-radius: 2px;
+}
+.box-card p{
+    text-align: center;
 }
 form{
     display: flex;
     flex-direction: column;
 }
 .contents7{
-    height: 200px;
     display: flex;
     color: white;
     background-color: black;
+    padding: 20px;
 }
 .circle-item-box{
     display: flex;
@@ -217,6 +257,7 @@ form{
 
 .contents8{
     background-color: white;
+    padding: 20px;
 }
 
 .title-box8{
@@ -243,6 +284,7 @@ form{
 .contents9{
     color: white;
     background-color:black ;
+    padding: 20px;
 }
 .title-box9{
     display: flex;
@@ -258,19 +300,23 @@ form{
     margin-right: 50px;
 }
 .formitem{
+    color: white;
+    background-color: gray;
     width: 45%;
     margin:0 15px 10px 0;
-    /*margin等を使えば、50%okかも?*/
 }
 textarea{
-    width: 95%;
+    width:95%;
+    
 }
+
 .visual{
     background-color: white;
 }
 .contents10{
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
     color: white;
     background-color: black;
 }
@@ -286,6 +332,7 @@ textarea{
 .contents11{
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 .title-box11{
     display: flex;
@@ -295,9 +342,14 @@ textarea{
     display: flex;
     justify-content: space-around;
 }
-.card-box{
-    border: 1px solid;
-    border-radius: 2px;
+
+.text{
+    margin-right: 40px;
+    padding: 5px;
+    box-shadow: 1px 3px #d0cec6;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    text-align: left;
 }
 .li2{
     margin: 10px 50px 10px 0;
