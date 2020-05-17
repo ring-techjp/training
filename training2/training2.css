@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
 p{
     font-size: 10px;
 }
@@ -16,67 +23,67 @@ a{
 h1{
     font-size:30px;
 }
-.line-left{
+.line_left{
     border-left: 1px solid;
     padding-left: 5px;
 }
 
 
 
-.header-top{
+.header_top{
     display: flex;
     padding: 10px;
     background-color: black;
 }
-.header-left{
+.header_left{
     flex-grow: 3;
     margin-left: 50px;
     color: white;
     font-size: 7px;
 }
-.header-right{
+.header_right{
     display: flex;
     flex-grow: 1;
 }
-.header-right2{
+.header_right2{
     display: flex;
     margin:  10px 0;
 }
-.header-main{
+.header_main{
     display: flex;
     background-color: #dcdcdc;
 }
-.header-main2{
+.header_main2{
     background-color: dimgray;
     height: 30px;
     display: flex;
     justify-content: center;
     
 }
-.header-logo{
+.header_logo{
     height:50px;
     margin: 0 400px 0 100px;
 }
 
-.header-list1{
+.header_list1{
     display: flex;
     justify-content: space-around;
     width: 550px;
     background-color: black;
 }
-.header-li{
+.header_li{
     padding-top: 3px;
     font-size: 5px;
 }
 
-.main-contents{
+.main_contents{
     height: 400px;
     text-align: center;
     padding-top: 100px;
     color: white;
     background-color: dimgray;
 }
-.main-contents2{
+.main_contents2{
     background-color: whitesmoke;
     padding-bottom: 20px;
 }
@@ -90,13 +97,13 @@ h1{
     font-size: 10px;
     background:linear-gradient(90deg, #ff9872, #ff4f02);
 }
-.main-contents-box{
+.main_contents_box{
     display: flex;
     justify-content: center;
 }
 
 
-.main-box-card{
+.main_box_card{
     width: 20%;
     margin:0 5px 20px 5px;
     padding: 20px;
@@ -106,7 +113,7 @@ h1{
     flex-direction: column;
 }
 
-.main-text{
+.main_text{
     text-align: center;
     margin: 30px 0;
 }
@@ -121,16 +128,16 @@ span{
     padding: 20px;
 }
 
-.left-contents{
+.left_contents{
     width: 50%;
     text-align: center;
 }
-.right-contents{
+.right_contents{
     width: 50%;
     
 }
 
-.text-box{
+.text_box{
     display: flex;
     flex-wrap: wrap;
 }
@@ -145,19 +152,19 @@ span{
     padding: 20px;
 }
 
-.title-box2{
+.title_box2{
     display: flex;
     justify-content: center;
 }
 
-.text-box2{
+.text_box2{
     display: flex;
     justify-content: center;
     color: black;
        
 }
 
-.text-card{
+.text_card{
     background-color: white;
     margin: 10px;
     padding: 20px;
@@ -169,10 +176,10 @@ span{
     padding: 20px;
 }
 
-.graph-box{
+.graph_box{
     display: flex;
 }
-.graph-card{
+.graph_card{
     width: 50%;
 }
 
@@ -182,12 +189,15 @@ span{
     padding: 20px;
     
 }
-.title-box4{
+.title_box4{
     display: flex;
     justify-content: center;
 }
-.circle-box{
+.circle_box{
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
+  
 }
 
 .contents5{
@@ -195,12 +205,12 @@ span{
     background-color: whitesmoke;
     padding: 20px;
 }
-.text-box3 p{
+.text_box3 p{
     background-color: white;
     margin: 5px 30px;
     padding: 10px;
 }
-.form-text{
+.form_text{
     width: 75%;
 }
 .formpuote{
@@ -214,7 +224,7 @@ span{
     height: 200px;
     padding: 20px;
 }
-.title-box6{
+.title_box6{
     display: flex;
     justify-content: center;
 }
@@ -227,11 +237,11 @@ span{
     padding: 5px;
     
 }
-.box-card{
+.box_card{
     margin: 0 10px;
     border-radius: 2px;
 }
-.box-card p{
+.box_card p{
     text-align: center;
 }
 form{
@@ -244,11 +254,11 @@ form{
     background-color: black;
     padding: 20px;
 }
-.circle-item-box{
+.circle_item_box{
     display: flex;
     flex-wrap: wrap;
 }
-.circle-item{
+.circle_item{
     height: 100px;
     width: 50%;
     background-color: #333;
@@ -260,7 +270,7 @@ form{
     padding: 20px;
 }
 
-.title-box8{
+.title_box8{
     display: flex;
     justify-content: center;
 }
@@ -272,7 +282,7 @@ form{
     list-style: none;
     margin-right: 20px;
 }
-.slide-img{
+.slide_img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -286,11 +296,11 @@ form{
     background-color:black ;
     padding: 20px;
 }
-.title-box9{
+.title_box9{
     display: flex;
     justify-content: center;
 }
-.contact-form{
+.contact_form{
     display: flex;
     justify-content: center;
 }
@@ -320,7 +330,7 @@ textarea{
     color: white;
     background-color: black;
 }
-.title-box10{
+.title_box10{
     width: 40%;
     margin: 0 auto;
 }
@@ -334,11 +344,11 @@ textarea{
     margin: 0 auto;
     padding: 20px;
 }
-.title-box11{
+.title_box11{
     display: flex;
     justify-content: center;
 }
-.box-contents{
+.box_contents{
     display: flex;
     justify-content: space-around;
 }
@@ -361,22 +371,22 @@ footer{
     background-color: black;
     padding-top: 40px;
 }
-.footer-list{
+.footer_list{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.footer-left{
+.footer_left{
     width: 30%;
 }
-.footer-center{
+.footer_center{
     width: 30%;
 }
-.center-box{
+.center_box{
     display: flex;
     flex-wrap: wrap;
 }
-.footer-right{
+.footer_right{
     width: 30%;
 }
 .links{
