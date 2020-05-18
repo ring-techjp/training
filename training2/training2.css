@@ -140,6 +140,7 @@ span{
 .text_box{
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .box{
@@ -155,6 +156,7 @@ span{
 .title_box2{
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .text_box2{
@@ -192,6 +194,8 @@ span{
 .title_box4{
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 .circle_box{
     width: 50%;
@@ -223,6 +227,8 @@ span{
     background-color: white;
     height: 200px;
     padding: 20px;
+    width: 90%;
+    margin: 0 auto;
 }
 .title_box6{
     display: flex;
@@ -254,15 +260,49 @@ form{
     background-color: black;
     padding: 20px;
 }
+.btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: tomato;
+    margin: 50px 0 0 50px;
+}
 .circle_item_box{
     display: flex;
     flex-wrap: wrap;
 }
-.circle_item{
-    height: 100px;
-    width: 50%;
+.circle{
+    
     background-color: #333;
     border-radius: 50%;
+    position: relative;
+}
+.item1, .item4{
+    height: 80px;
+    width: 30%;
+}
+.item2, .item3{
+    height: 100px;
+    width: 40%;
+}
+.item1{
+    margin: 0 15px 0 40px;
+}
+.item4{
+    margin: 15px 0 0 15px;
+}
+.circle_text1,.circle_text4{
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+}
+.circle_text2, .circle_text3{
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    
 }
 
 .contents8{
@@ -299,6 +339,20 @@ form{
 .title_box9{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+}
+.address{
+   
+    text-align: left;
+}
+.help{
+    
+    text-align: left;
+    margin: 10px 0 ;
+}
+.information{
+
+    text-align: left;
 }
 .contact_form{
     display: flex;
@@ -337,6 +391,7 @@ textarea{
 .big{
     border: initial;
     color: white;
+    font-weight: bold;
     font-size: 50px;
 }
 .contents11{
@@ -352,10 +407,12 @@ textarea{
     display: flex;
     justify-content: space-around;
 }
-
+.card_box{
+    margin-right: 30px;
+    padding-left: 20px;
+}
 .text{
-    margin-right: 40px;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 1px 3px #d0cec6;
     background-color: whitesmoke;
     border-radius: 3px;
