@@ -126,6 +126,9 @@ h1{
     border: none;
     
 }
+.next3{
+    border: none;
+}
 .main_contents_box{
     display: flex;
     justify-content: center;
@@ -144,44 +147,24 @@ h1{
     flex-direction: column;
     
 }
-.background_orenge1{
-    height: 9px;
-    width: 100%;
-    position: absolute;
-    bottom: 145px;
-    left: 0;
-    background-color: tomato;
-}
-.background_orenge2{
-    height: 9px;
-    width: 100%;
-    position: absolute;
-    bottom: 145px;
-    left: 0;
-    background-color: tomato;
-}
-.background_orenge3{
-    height: 9px;
-    width: 100%;
-    position: absolute;
-    bottom: 130px;
-    left: 0;
-    background-color: tomato;
-}
+
 .num1{
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 150px;
+    border-top: 5px solid tomato;
 }
 .num2{
     position: absolute;
-    bottom: 40px;
+    bottom: 30px;
     left: 350px;
+    border-top: 5px solid tomato;
 }
 .num3{
     position: absolute;
-    bottom: 55px;
+    bottom: 45px;
     left: 550px;
+    border-top: 5px solid tomato;
 }
 
 .main_text{
@@ -407,6 +390,9 @@ li{
     justify-content: space-around;
     flex-wrap: wrap;
     
+}
+.slide_img i{
+    margin-right: 5px;
 }
 .img{
     width: 25%;
