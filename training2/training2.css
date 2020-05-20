@@ -141,6 +141,7 @@ h1{
     width: 20%;
     margin:0 5px 20px 5px;
     padding: 20px;
+    height: 160px;
     background-color: lightgray;
     text-align: center;
     display: flex;
@@ -162,7 +163,7 @@ h1{
 }
 .num3{
     position: absolute;
-    bottom: 45px;
+    bottom: 30px;
     left: 550px;
     border-top: 5px solid tomato;
 }
