@@ -3,18 +3,18 @@
 }
 
 /*header*/
-.header_1{
+.header-1{
     background-color: #383838;
     height: 45px;
     display:flex;
     align-items: center;
 }
-.header_1 p{
+.header-1 p{
     color: white;
     font-size: 15px;
     margin-left: 220px;
 }
-.first_span{
+.first-span{
     color:#B9292B;
 }
 .social-icons{
@@ -45,36 +45,33 @@
     color: #BE0B1F;
 }
 
-.header_2{
+.header-2{
     background-color: #FFFFFF;
     height: 115px;
     display: flex;
     align-items: center;
 }
-.header_content{
+.header-content{
     display: flex;
     margin-right: 210px;
     margin-left:auto;
     font-size: 10px;
 }
-.main_icon img{
+.main-icon img{
     margin-left: 210px;
 }
-.call_box{
+.call-box{
     display: flex;
     margin-right: 35px;
 }
-.map_box{
+.map-box{
     display: flex;
     padding-left: 35px;
     border-left:1px solid #C0C0C0;
 }
-.top_wrapper{
+.top-wrapper{
     display: flex;
-    justify-content: center;
-    height: 750px;
-    background-image: url(training_img/unsplash.jpg);
-    background-size: cover;
+    justify-content: center; 
 }
 nav{
     overflow: hidden;
@@ -97,7 +94,24 @@ nav li a{
     font-size: 13px;
     font-weight:bolder;
 }
-.top_wrapper_btn{
+/*main*/
+
+/*box1*/
+.box1{
+    height: 1380px;
+}
+
+/*box1-first-wrapper*/
+.box1-group{
+    height: 750px;
+    background-image:url(training_img/samson-ZGjbiukp_-A-unsplash.jpg) ;
+    background-size: cover;
+}
+.box1-first-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.box1-first-wrapper-btn{
     display: inline-block;
     text-align: center;
     line-height: 75px;
@@ -108,4 +122,117 @@ nav li a{
     margin-left: 10px;
     font-size: 13px;
     font-weight:bolder;
+}
+
+/*box1-second-wrapper*/
+.box1-second-wrapper{
+    text-align: center;
+    margin-top: 80px;
+}
+.box1-second-wrapper-p{
+    font-size: 23px;
+    color: white;
+    margin:10px 0 30px 0;
+}
+.box1-btns{
+    display: flex;
+    justify-content: center;
+}
+.box1-btns-first{
+    display: inline-block;
+    text-align: center;
+    line-height:45px;
+    width: 50px;
+    height: 50px;
+    background-image:linear-gradient(90deg,#D16519,#C83E24);
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.box1-btns-second{
+    display: inline-block;
+    text-align: center;
+    line-height:50px;
+    height:50px;
+    width: 180px;
+    background-image:linear-gradient(90deg,#D16519,#C83E24);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/*box1-third-wapper*/
+.box1-third-wrapper{
+    height: 560px;
+    background-color: #F5F3F3;
+}
+.box1-third-wrapper-btn{
+    display: flex;
+    margin-right: 225px;
+}
+.box1-third-wrapper-btn-1{
+    position: absolute;
+    left: 225px;
+    margin-top: 150px;
+    z-index: 2;
+}
+.box1-third-wrapper-btn-2{
+    position: absolute;
+    left: 1175px;
+    margin-top: 150px;
+    z-index: 2;
+}
+.common-btn{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    color: #303030;
+    box-shadow:0 0 20px rgb(196, 196, 196);
+}
+.box1-third-wrapper-section{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.box1-third-wrapper-section-content{
+    background-color: #FFFFFF;
+    height: 330px;
+    width: 280px;
+    text-align: center;
+    border-top:7px solid ;
+    border-image:linear-gradient(90deg,#D16519,#C83E24);
+    border-image-slice: 1;
+    box-shadow:0 0 30px rgb(196, 196, 196);
+}
+.box1-third-wrapper-section-content img{
+    width: 70px;
+    padding:50px 0 15px 0;
+}
+.lines{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.box1-third-wrapper-section-content p{
+    font-weight: lighter;
+    font-size: 12px;
+    opacity: 0.8;
+    line-height: 2;
+}
+.box1-third-wrapper-p{
+    font-weight: lighter;
+    font-size: 15px;
+    opacity: 0.8;
+    line-height: 2;
+    text-align: center;
+    margin-top: 70px;
+}
+.box1-third-wrapper-p a{
+    color: #C53333;
 }
