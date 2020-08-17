@@ -563,13 +563,13 @@ nav li a{
     opacity: 0.7;
 }
 .about-question-form select{
+    appearance: none;
+    -webkit-appearance: none;
     height: 45px;
     width: 365px;
     border: 1px solid rgb(156,164,171,0.4);
     padding: 0 10px;
-}
-.about-question-form select span{
-    color: #9F9F9F;
+    color: rgb(156,164,171); 
 }
 .about-question-form a{
     display: inline-block;
@@ -586,4 +586,266 @@ nav li a{
 }
 .about-question-form a i{
     padding-right: 10px;
+}
+/*about-team*/
+.about-team{
+    height: 670px;
+}
+.about-team-intro h4{
+    color: black;
+}
+.about-team-intro p{
+    color: black;
+}
+.about-teams-mens-content{
+    margin-left: 25px;
+    margin-top: 35px;
+}
+.about-teams-mens-img{
+    background-color: #D3D3D3;
+    height: 290px;
+    width: 230px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.about-teams-mens-name{
+    height: 80px;
+    width: 190px;
+    border-radius:5px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 30px rgb(196, 196, 196);
+    margin-left: 25px;
+    margin-top: -25px;
+    position: absolute;
+    z-index: 5;
+}
+.about-teams-mens-name h4{
+    padding-top: 18px;
+}
+.about-teams-mens-name p{
+    font-weight: lighter;
+    font-size: 12px;
+    color: #949494;
+    text-align: center;
+}
+.about-teams-mens{
+    display: flex;
+    justify-content: center;
+}
+/*about-fact*/
+.about-fact{
+    height: 490px;
+    background-image: url(training_img/bgimg2.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+}
+.about-fact-content{
+    margin-left: 245px;
+    padding-top: 80px;
+}
+.about-fact-content-btn{
+    margin-left:75px;
+    margin-top: 50px; 
+}
+.about-fact-number{
+    height: 350px;
+    width: 500px;
+    position: relative;
+    margin-top: 100px;
+    
+}
+.about-fact-number-common{
+    background-color: #2D2C2C;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+}
+.about-fact-number-common h3{
+    font-family: 'arial black';
+}
+.big-circle h3{
+    padding-top: 35px;
+}
+.small-circle h3{
+    padding-top: 25px;
+}
+.about-fact-number-common p{
+    font-weight: lighter;
+    font-size: 14px;
+    opacity: 0.8
+}
+.about-fact-number-105{
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    left: 115px;
+}
+.about-fact-number-215{
+    width: 140px;
+    height: 140px;  
+    left: 250px;
+}
+.about-fact-number-8{
+    width: 140px;
+    height: 140px;
+    top: 145px;
+    left: 75px;
+}
+.about-fact-number-310{
+    width: 120px;
+    height: 120px;
+    top: 155px;
+    left: 230px;
+}
+/*about-market*/
+.about-market{
+    height: 1000px;
+}
+.about-market ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: -50px;
+}
+.about-market ul li{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 30px;
+}
+.about-market-first-btn a{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background-image: linear-gradient(90deg,#D16519,#C83E24);
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.about-market-imgs{
+    margin: 30px auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-market-imgs div{
+    width: 215px;
+    height: 215px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.about-market-btn{
+    text-align: center;
+}
+.about-market-btn a{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 175px;
+    background-image: linear-gradient(90deg,#D16519,#C83E24);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.about-market-btn i{
+    margin-right: 10px;
+}
+/*about-information*/
+.about-information{
+    height: 700px;
+    background-image: url(training_img/pc.jpg);
+    background-size: cover;
+    color: white;
+}
+.about-infomation-section{
+    display: flex;
+    
+}
+.about-information-content{
+    margin-top: 10px;
+    margin-left: 320px;
+}
+.about-information-contet-common{
+    display: flex;
+    margin-top: 40px;
+}
+.information-content-img-common{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(58, 58, 58, 0.8);
+    border: 1px solid #5E5E5F;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.information-content-sentence-common p{
+    font-weight: lighter;
+    font-size: 12px;
+    opacity: 0.8;
+    line-height: 2;
+    color: #dddddd;
+}
+.about-information-form{
+    width: 400px;
+    margin-left: 50px;
+}
+.about-information-form input{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(58, 58, 58, 0.8);
+    border: 1px solid #8d8d8d;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.about-information-form input::placeholder{
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding-left: 15px;
+}
+.about-information-form textarea{
+    width: 382px;
+    height: 130px;
+    background-color: rgba(58, 58, 58, 0.8);
+    border: 1px solid #8d8d8d;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.about-information-form textarea::placeholder{
+    color: #FFFFFF;
+    opacity: 0.8;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.about-information-form a{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 390px;
+    background-image: linear-gradient(90deg,#D16519,#C83E24);
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.about-information-form i{
+    margin-right: 10px;
 }
