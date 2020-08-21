@@ -1322,6 +1322,7 @@ footer{
     }
     .about-network-content {
         margin: 0;
+        width: 100%;
     }
     .about-network-img {
         width: 300px;
@@ -1659,6 +1660,7 @@ footer{
     .about-consultant-intro{
         margin: 0 auto;
     }
+    /*common-intro-sentence1*/
     .common-intro-sentence1{
         margin-left:20%;
         width: 350px;
@@ -1666,6 +1668,7 @@ footer{
     .common-intro-sentence1 h4 {
         font-size: 20px;
     }
+    /**/
     .about-consultant-img{
         left: 0;
         display: none;
@@ -1688,12 +1691,15 @@ footer{
         margin-top: 30px;
         margin-left: 0;
     }
+    /*common-intro-sentence2*/
     .common-intro-sentence2{
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .common-intro-sentence2-detail{
+        width: 330px;
         display: block;
     }
+    /**/
     .about-business-content{
         margin: 0 auto 20px auto;
     }
@@ -1727,7 +1733,8 @@ footer{
         height: 800px;
     }
     .common-intro-sentence2 h4{
-        font-size: 22px;
+        font-size: 20px;
+        width: 100%;
     }
     .about-review-intro p{
         margin-top: 10px;
@@ -1762,13 +1769,13 @@ footer{
         font-size: 10px;
     }
     .about-question-form input{
-        width: 300px;
+        width: 80%;
     }
     .about-question-form select{
-        width: 300px;
+        width: 80%;
     }
     .about-question-form a{
-        width: 300px;
+        width: 80%;
     }
     /*about-team*/
     .about-team{
@@ -1792,8 +1799,8 @@ footer{
         margin-left: 15%;
     }
     .about-fact-number{
+        width: 370px;
         margin-top: 40px;
-        margin-left: 10px;
     }
     .about-market li{
         padding-top: 20px;
