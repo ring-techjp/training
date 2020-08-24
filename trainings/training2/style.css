@@ -5,6 +5,9 @@
     width: 100%;
     overflow: hidden;
 }
+body{
+    overflow: scroll;
+}
 /*header*/
 .header-1{
     background-color: #383838;
@@ -726,6 +729,7 @@ nav li a{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .about-market-imgs div{
     width: 215px;
@@ -1300,6 +1304,7 @@ footer{
     }
     .about-business-contents{
         flex-wrap: wrap;
+        overflow: hidden;
         margin-left: 30px;
         margin-top: 60px;
     }
@@ -1421,6 +1426,7 @@ footer{
     .about-teams-mens{
         display: flex;
         flex-wrap:wrap;
+        overflow: hidden;
     }
     .about-teams-mens-name{
         height: 60px;
@@ -1499,6 +1505,7 @@ footer{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     .about-share-awards-content-intro-sentence{
         margin-top: 20px;
@@ -1522,6 +1529,7 @@ footer{
     }
     .about-share-icons{
         flex-wrap: wrap;
+        overflow: hidden;
     }
     .about-share-icons div{
         width: 40%;
@@ -1567,10 +1575,10 @@ footer{
 }
 /*画面幅が480pxまでの時(スマホレイアウト)*/
 @media screen and (max-width:480px){
-    .container{
-        overflow: hidden;
-    }
     /*header*/
+    .container{
+        width: 100%;
+    }
     .header-1 p{
         margin-left: 10%;
         font-size: 9px;
@@ -1858,7 +1866,7 @@ footer{
     }
     .about-share-awards-img-group1{
         display: flex;
-
+        overflow: hidden;
     }
     .about-share-awards-img-group1 div,.about-share-awards-img-group2 div{
         border-bottom: none;
