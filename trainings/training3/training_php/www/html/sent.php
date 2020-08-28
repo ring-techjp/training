@@ -15,7 +15,6 @@
             <div class="confirmation-item">
                 <div class="confirmation-item-name">名前</div>
                 <div class="confirmation-item-detail"><?php echo $_POST['name']; ?></div>
-                
             </div>
             <div class="confirmation-item">
                 <div class="confirmation-item-name">電話番号</div>
