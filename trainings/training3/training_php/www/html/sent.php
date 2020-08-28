@@ -30,6 +30,5 @@
             </div> 
         </div>
     </div>
-    <script src="check.js"></script>
 </body>
 </html>
