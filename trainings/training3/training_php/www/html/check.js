@@ -1,9 +1,12 @@
-
-
-function Check(){
-    if(document.form.name.value==""){
-        document . getElementById( 'name-feedback' ) . style . display = "block";
+//nameバリデーション
+function check(){
+    if(form.name.value == ""){
+        alert("名前を入力してください");
+        return false;
     }else{
-        document . getElementById( 'name-feedback' ) . style . display = "none";
+        return true;
     }
 }
+
+
+

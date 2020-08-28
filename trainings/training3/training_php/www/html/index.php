@@ -12,11 +12,11 @@
             <h1>アンケートフォーム</h1>
         </div>
         <div class="main">
-                <form  class="questionnaire-form" name="form" action="sent.php" method="post" onsubmit="return formCheck()">
+                <form  class="questionnaire-form" name="form" action="sent.php" method="post">
                     <div class="questionnaire-form-items">
                         <div class="questionnaire-form-item">
                             <div class="questionnaire-form-item-name">名前</div>
-                            <input class="name" type="text" name="name">
+                            <input class="name" type="text" name="name" placeholder="*必須項目*">
                         </div>
                         <div class="questionnaire-form-item">
                             <div class="questionnaire-form-item-name">電話番号</div>
@@ -27,7 +27,7 @@
                             <input class="email" type="text" name="email">
                         </div>
                     </div>
-                    <input class="btn" type="submit" value="送信">
+                    <input class="btn" type="submit" value="送信" onclick="return check()">
                 </form>
         </div>
     </div>

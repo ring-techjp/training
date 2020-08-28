@@ -4,7 +4,7 @@
 }
 .container{
     margin: 0 auto;
-    width: 700px;
+    width: 60%;
     border: thin solid rgba(163, 163, 163, 0.699);
     padding:50px;
     border-radius: 6px;
@@ -33,6 +33,10 @@ form,.wrap{
     border: thin solid rgba(163, 163, 163, 0.699);
     border-radius: 5px;
 }
+::placeholder{
+    color: rgba(163, 163, 163, 0.699);
+    padding-left: 10px;
+}
 .questionnaire-form-item,.confirmation-item{
     margin-bottom: 40px;
 }
@@ -45,10 +49,6 @@ form,.wrap{
 }
 .confirmation-item-detail{
     margin-right: 30px;
-}
-#name-feedback{
-    display: none;
-    color: red;
 }
 .btn{
     display: block;
