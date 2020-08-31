@@ -12,11 +12,8 @@
             <h1>確認画面</h1>
         </div>
 
-        <?php 
-        $items = array( "名前" => $_POST['name'], "電話番号" => $_POST['tel'], "メールアドレス" => $_POST['email']);
-        ?>
         <div class="wrap">
-                <?php foreach($items as $key => $item):?>
+                <?php foreach($_POST['data'] as $key => $item):?>
                 <div class="confirmation-item">
                     <div class="confirmation-item-name"><?php echo $key ?></div>
                     <div class="confirmation-item-detail">
