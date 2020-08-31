@@ -40,6 +40,9 @@ form,.wrap{
 .questionnaire-form-item,.confirmation-item{
     margin-bottom: 40px;
 }
+.confirmation-item{
+    flex-direction: column;
+}
 .questionnaire-form-item{
     display: flex;
 }
