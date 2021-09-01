@@ -2,16 +2,13 @@ header {
   position: absolute;
 }
 
-.wrapper {
-  width: 100%;
-}
-
 .header_wrapper {
   width: 1366px;
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 .logo {
@@ -75,4 +72,22 @@ main {
   position: relative;
   top: 22px;
   left: 320px;
+}
+
+/* -- Whta's New -- */
+
+.new {
+  background-color: #daeafd;
+}
+
+.new_wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.new_title {
+  text-align: center;
+  font-family: Nunito;
+  font-size: 35px;
+  color: #2bc1f8;
 }
