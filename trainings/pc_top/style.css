@@ -1,13 +1,17 @@
+header {
+  position: absolute;
+}
+
 .wrapper {
-  width: 1366px;
+  width: 100%;
 }
 
 .header_wrapper {
+  width: 1366px;
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 
 .logo {
@@ -22,6 +26,7 @@
 .logo p {
   font-family: Alex Brush;
   font-size: 18px;
+  text-align: center;
 }
 
 .nav {
@@ -36,9 +41,38 @@
   display: flex;
 }
 
+/* -- main -- */
+
 main {
   background-image: url(https://placehold.jp/1366x909.png);
   background-size: cover;
   background-position: center;
   height: 909px;
+}
+
+.main_title {
+  background-color: #3fb9dc;
+  width: 612px;
+  height: 190px;
+  position: relative;
+  top: 285px;
+}
+
+.main_title p {
+  color: white;
+}
+
+.main_name {
+  font-size: 35px;
+  position: relative;
+  top: 27px;
+  left: 200px;
+}
+
+.sub_title {
+  font-family: Alex Brush;
+  font-size: 30px;
+  position: relative;
+  top: 22px;
+  left: 320px;
 }
