@@ -1,0 +1,44 @@
+.wrapper {
+  width: 1366px;
+}
+
+.header_wrapper {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-left: 145px;
+}
+
+.logo h1 {
+  font-family: Poiret One;
+  font-size: 37px;
+}
+
+.logo p {
+  font-family: Alex Brush;
+  font-size: 18px;
+}
+
+.nav {
+  margin-right: 179px;
+}
+
+.nav_item {
+  margin-left: 63px;
+}
+
+.nav_items {
+  display: flex;
+}
+
+main {
+  background-image: url(https://placehold.jp/1366x909.png);
+  background-size: cover;
+  background-position: center;
+  height: 909px;
+}

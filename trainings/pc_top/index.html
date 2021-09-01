@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Yui Kawamoto</h1>
-      <p>Official Website</p>
-      <nav>
-        <ul>
-          <li><a href="#">TOP</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">会員ログイン</a></li>
-        </ul>
-      </nav>
+      <div class="wrapper header_wrapper">
+        <div class="logo">
+          <h1>Yui Kawamoto</h1>
+          <p>Official Website</p>
+        </div>
+        <nav class="nav">
+          <ul class="nav_items">
+            <li class="nav_item"><a href="#">TOP</a></li>
+            <li class="nav_item"><a href="#">NEWS</a></li>
+            <li class="nav_item"><a href="#">会員ログイン</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="main_title">
@@ -25,39 +30,32 @@
         <p>オフィシャルサイト</p>
         <p>Official Website</p>
       </div>
-      <img src="https://placehold.jp/1366x909.png" alt="sample_image" />
     </main>
     <section class="new">
       <h2>What's New</h2>
-      <ul>
-        <li>
+      <dl>
+        <dt>
           <div class="date">
             <p class="day">2021.06.15</p>
             <p class="content">TOUR</p>
           </div>
-          <div class="title">
-            <p>ツアーのお知らせ</p>
-          </div>
-        </li>
-        <li>
+        </dt>
+        <dd class="title">ツアーのお知らせ</dd>
+        <dt>
           <div class="date">
             <p class="day">2021.06.15</p>
             <p class="content">TOUR</p>
           </div>
-          <div class="title">
-            <p>ツアーのお知らせ</p>
-          </div>
-        </li>
-        <li>
+        </dt>
+        <dd class="title">ツアーのお知らせ</dd>
+        <dt>
           <div class="date">
             <p class="day">2021.06.15</p>
             <p class="content">TOUR</p>
           </div>
-          <div class="title">
-            <p>ツアーのお知らせ</p>
-          </div>
-        </li>
-      </ul>
+        </dt>
+        <dd class="title">ツアーのお知らせ</dd>
+      </dl>
       <div class="view_button">
         <button><a href="#">View More →</a></button>
       </div>
