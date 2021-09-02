@@ -63,3 +63,44 @@ body {
     }
   }
 }
+
+.contents {
+  width: 100%;
+  height: 600px;
+  background: rgb(204, 233, 242);
+  position: relative;
+
+  &__txt {
+    text-align: center;
+    font-size: 2.2em;
+    color: #00d0ff;
+     padding-top: 3%;
+    }
+
+  &__img {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 330px;
+      height: 330px;
+    }
+  }
+
+  .notice{
+    width: 100%;
+    .tour{
+      display: flex;
+      
+  
+      &__news {
+        padding-left: 30%;
+      }
+  
+    }
+  }
+
+}

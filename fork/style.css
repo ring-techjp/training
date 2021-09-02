@@ -58,4 +58,49 @@ body {
   width: 612px;
   height: 190px;
 }
+
+.contents {
+  width: 100%;
+  height: 600px;
+  background: #cce9f2;
+  position: relative;
+}
+
+.contents__txt {
+  text-align: center;
+  font-size: 2.2em;
+  color: #00d0ff;
+  padding-top: 3%;
+}
+
+.contents__img {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contents__img img {
+  width: 330px;
+  height: 330px;
+}
+
+.contents .notice {
+  width: 100%;
+}
+
+.contents .notice .tour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contents .notice .tour__news {
+  padding-left: 30%;
+}
 /*# sourceMappingURL=style.css.map */
