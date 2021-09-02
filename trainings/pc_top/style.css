@@ -2,6 +2,8 @@ body {
   width: 100%;
 }
 
+/* -- header -- */
+
 header {
   width: 100%;
   position: absolute;
@@ -21,14 +23,16 @@ header {
 }
 
 .logo h1 {
-  font-family: Poiret One;
+  font-family: "Poiret One";
   font-size: 37px;
+  color: #ffffff;
 }
 
 .logo p {
-  font-family: Alex Brush;
+  font-family: "Alex Brush";
   font-size: 18px;
   text-align: center;
+  color: #ffffff;
 }
 
 nav {
@@ -37,6 +41,7 @@ nav {
 
 .nav_item {
   margin-left: 63px;
+  color: #ffffff;
 }
 
 .nav_items {
@@ -46,10 +51,10 @@ nav {
 /* -- main -- */
 
 main {
-  background-image: url(https://placehold.jp/1366x909.png);
+  background-image: url(./images/main_image.png);
   background-size: cover;
   background-position: center;
-  height: 909px;
+  height: 1034px;
 }
 
 .main_title {
@@ -79,7 +84,7 @@ main {
 }
 
 .sub_title {
-  font-family: Alex Brush;
+  font-family: "Alex Brush";
   font-size: 30px;
   position: relative;
   top: 22px;
@@ -88,18 +93,145 @@ main {
 
 /* -- Whta's New -- */
 
-.new {
+#new {
   background-color: #daeafd;
 }
 
 .new_wrapper {
   width: 1366px;
   margin: 0 auto;
+  height: 600px;
 }
 
 .new_title {
   text-align: center;
-  font-family: Nunito;
+  font-family: "Nunito";
   font-size: 35px;
   color: #2bc1f8;
+  padding-top: 62px;
+}
+
+.new_content {
+  display: flex;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notice {
+  margin-left: 86px;
+}
+
+.date {
+  display: flex;
+}
+
+.day {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #707070;
+  font-weight: lighter;
+  margin-right: 20px;
+}
+
+dt:nth-child(n + 2) {
+  margin-top: 30px;
+}
+
+.content_name_box {
+  text-align: center;
+  width: 104px;
+  height: 24px;
+  background-color: #5ea709;
+}
+
+.content_name {
+  font-family: "Lato";
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: lighter;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content_title {
+  font-family: "Kozuka Gothic Pr6N";
+  font-size: 20px;
+  margin-top: 14px;
+}
+
+.view_button {
+  display: flex;
+  align-items: flex-end;
+}
+
+.view_button button {
+  background-color: #2bc1f8;
+  width: 240px;
+  height: 57px;
+  text-align: center;
+}
+
+.view_button button a {
+  font-family: "Lato";
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* -- Instagram -- */
+
+.instagram {
+  background-image: url(./images/insta.png);
+  background-size: cover;
+  background-position: center;
+  height: 870px;
+}
+
+.insta_title {
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 35px;
+  color: #ffffff;
+  padding-top: 60px;
+}
+
+.insta_image {
+  margin-top: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.image_item {
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -- Youtube -- */
+
+.youtube {
+  background-color: #daeafd;
+}
+
+.youtube_wrapper {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.youtube_images {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.youtube_logo {
+  position: absolute;
+  top: 250px;
+  left: 30%;
 }
