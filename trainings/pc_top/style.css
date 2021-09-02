@@ -1,0 +1,105 @@
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+}
+
+.header_wrapper {
+  width: 1366px;
+  margin: 0 auto;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 145px;
+}
+
+.logo h1 {
+  font-family: Poiret One;
+  font-size: 37px;
+}
+
+.logo p {
+  font-family: Alex Brush;
+  font-size: 18px;
+  text-align: center;
+}
+
+nav {
+  margin-right: 179px;
+}
+
+.nav_item {
+  margin-left: 63px;
+}
+
+.nav_items {
+  display: flex;
+}
+
+/* -- main -- */
+
+main {
+  background-image: url(https://placehold.jp/1366x909.png);
+  background-size: cover;
+  background-position: center;
+  height: 909px;
+}
+
+.main_title {
+  background-color: #3fb9dc;
+  width: 612px;
+  height: 190px;
+  position: relative;
+  top: 285px;
+}
+
+.main_title p {
+  color: white;
+}
+
+.main_name {
+  font-size: 35px;
+  position: relative;
+  top: 27px;
+  left: 200px;
+}
+
+.main_sub_name {
+  font-size: 35px;
+  position: relative;
+  top: 27px;
+  left: 200px;
+}
+
+.sub_title {
+  font-family: Alex Brush;
+  font-size: 30px;
+  position: relative;
+  top: 22px;
+  left: 320px;
+}
+
+/* -- Whta's New -- */
+
+.new {
+  background-color: #daeafd;
+}
+
+.new_wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.new_title {
+  text-align: center;
+  font-family: Nunito;
+  font-size: 35px;
+  color: #2bc1f8;
+}
