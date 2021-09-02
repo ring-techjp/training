@@ -28,17 +28,38 @@
 }
 
 .header__left img {
-  width: 200px;
-  height: 44px;
-  margin: 32px 145px 0 0;
+  width: 212px;
+  height: 67px;
+  margin: 30px 145px 0 0;
   position: absolute;
   top: 0;
-  left: 50px;
+  left: 10%;
   z-index: 9999;
 }
 
 .header__left img .text {
   width: 100px;
   height: 23px;
+}
+
+.header__right {
+  margin-top: 52px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+.header__right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__right ul li {
+  color: #fff;
+}
+
+.header__right ul li:nth-child(2) {
+  padding: 0 72px 0 50px;
 }
 /*# sourceMappingURL=style.css.map */

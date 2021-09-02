@@ -29,12 +29,12 @@
        &__left {
 
         img {
-            width: 200px;
-            height: 44px;
-            margin: 32px 145px 0 0;
+            width: 212px;
+            height: 67px;
+            margin: 30px 145px 0 0;
             position: absolute;
             top: 0;
-            left: 50px;
+            left: 10%;
             z-index: 9999;
 
             .text {
@@ -42,11 +42,35 @@
                 height: 23px;
             }
          }
-
-     
        }
-       
-    
-     
 
+       &__right {
+           margin-top: 52px;
+           position: absolute;
+           top: 0;
+           right: 15%;
+
+           & ul {
+               display: flex;
+
+               li {
+                   color: #fff;
+               }
+
+               & li:nth-child(2) {
+                   padding: 0 72px 0 50px;
+                   
+               }
+           }
+
+       }
 }
+
+
+
+
+
+
+
+
+
