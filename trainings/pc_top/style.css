@@ -1,3 +1,7 @@
+body {
+  width: 100%;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -5,11 +9,11 @@ header {
 
 .header_wrapper {
   width: 1366px;
+  margin: 0 auto;
   padding-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 
 .logo {
@@ -27,7 +31,7 @@ header {
   text-align: center;
 }
 
-.nav {
+nav {
   margin-right: 179px;
 }
 
@@ -61,6 +65,13 @@ main {
 }
 
 .main_name {
+  font-size: 35px;
+  position: relative;
+  top: 27px;
+  left: 200px;
+}
+
+.main_sub_name {
   font-size: 35px;
   position: relative;
   top: 27px;
