@@ -91,7 +91,7 @@ main {
 
 .main #notice {
   position: relative;
-  height: 100%;
+  height: 80%;
 }
 
 .main #notice .date {
@@ -123,12 +123,48 @@ main {
 
 .main #notice .view__button {
   position: absolute;
-  left: 70%;
-  top: 60%;
+  left: 69%;
+  top: 75%;
   background-color: #2BC1F8;
   padding: 8px 33px;
   font-size: 20px;
   font-family: "Lato";
   color: #FFFFFF;
+}
+
+#instagram {
+  width: 100%;
+  height: 871px;
+  background-image: url(./img/insta_bg.png);
+  margin-top: 36px;
+}
+
+#instagram .instagram {
+  position: relative;
+}
+
+#instagram .instagram__title {
+  position: absolute;
+  left: 45%;
+  font-size: 35px;
+  color: #FFFFFF;
+  margin-top: 59px;
+}
+
+#instagram .instagram__container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 262px 262px 262px;
+      grid-template-columns: 262px 262px 262px;
+  padding-top: 12%;
+  gap: 8% 3%;
+}
+
+#instagram .instagram__item img {
+  width: 262px;
+  height: 262px;
 }
 /*# sourceMappingURL=style.css.map */
