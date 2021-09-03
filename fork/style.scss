@@ -41,7 +41,7 @@ body {
       display: flex;
 
       li {
-        color: #fff;
+        color: #FFFFFF;
       }
 
       & li:nth-child(2) {
@@ -65,19 +65,18 @@ body {
 }
 
 main {
-  width: 100%;
+  
   height: 600px;
-  background: rgb(204, 233, 242);
+  background: #DAEAFD;
   position: relative;
 }
 
 .main {
- 
 
   &__title {
     text-align: center;
     font-size: 2.2em;
-    color: #00d0ff;
+    color: #2BC1F8;
      padding-top: 3%;
     }
 
@@ -93,11 +92,56 @@ main {
       height: 330px;
     }
   }
-    .date{
-      display: flex;
+
+  #notice {
+    position: relative;
+    height: 100%;
+
+    .date {
       position: absolute;
       left: 50%;
+      top: 11%;      
+
+      &__tour {
+        margin-left: 20%;
+        padding: 7px 14px;
+        background-color:#5EA709;
+        font-family: "Lato";
+        font-size: 15px;
+        color: #FFFFFF;
+        
+      }
+
+      &__news {
+        margin: 30px 0;
+
+        font-size:20px;
+        font-family:'Kozuka Gothic Pr6N';
+      }
+
+      &__day {
+        font-family: "Lato";
+        font-size: 18px;
+        color: #707070;
+      }
     }
 
+    .view__button {
+      position: absolute;
+      left: 70%;
+      top: 60%;
+      background-color: #2BC1F8;
+      padding: 8px 33px;
+      font-size: 20px;
+      font-family: "Lato";
+      color: #FFFFFF;
+    }
+
+
   }
+  
+
+
+
+}
 
