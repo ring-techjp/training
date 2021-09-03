@@ -161,7 +161,7 @@ dt:nth-child(n + 2) {
   margin-top: 14px;
 }
 
-.view_button {
+.new_button {
   display: flex;
   align-items: flex-end;
 }
@@ -235,4 +235,74 @@ dt:nth-child(n + 2) {
   position: absolute;
   top: 250px;
   left: 30%;
+}
+
+/* -- Profile -- */
+
+#profile {
+  background-image: url(./images/profile.png);
+  background-size: cover;
+  background-position: center;
+  height: 406px;
+}
+
+.profile_wrapper {
+  width: 60%;
+  margin-left: 100px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.profile_title {
+  color: #ffffff;
+  font-family: "Lora";
+  font-size: 35px;
+}
+
+.profile_name {
+  color: #ffffff;
+  font-family: "Meiryo";
+  font-size: 35px;
+  padding: 20px 0;
+}
+
+.profile_button {
+  padding-bottom: 90px;
+}
+
+/* -- powered by -- */
+
+.powered {
+  background-color: #2bc1f8;
+  height: 280px;
+}
+
+.powered_wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.powered_title {
+  color: #ffffff;
+  font-family: "Lora";
+  font-size: 35px;
+  padding-top: 50px;
+}
+
+.powered_list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.back_white_box {
+  width: 250px;
+  height: 90px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
