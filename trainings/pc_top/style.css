@@ -35,7 +35,7 @@ header {
   color: #ffffff;
 }
 
-nav {
+.top_nav {
   margin-right: 179px;
 }
 
@@ -305,4 +305,72 @@ dt:nth-child(n + 2) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* -- footer -- */
+
+footer {
+  background-image: url(./images/insta.png);
+  background-size: cover;
+  background-position: center;
+  height: 870px;
+}
+
+.footer_wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_name_container {
+  padding-top: 180px;
+  text-align: center;
+}
+
+.footer_name {
+  font-family: "Poiret One";
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.footer_subname {
+  font-family: "Alex Brush";
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.footer_nav_container {
+  display: flex;
+  padding-top: 40px;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_list li {
+  margin: 0 30px;
+}
+
+.footer_list li a {
+  color: #ffffff;
+}
+
+.footer_icon_container {
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  align-content: space-between;
+}
+
+.icon_item:nth-child(2) {
+  padding: 0 40px;
 }
