@@ -1,376 +1,752 @@
-body {
-  width: 100%;
+/* -- PC -- */
+
+@media screen and (min-width: 750px) {
+  body {
+    width: 100%;
+  }
+
+  /* -- header -- */
+
+  header {
+    width: 100%;
+    position: absolute;
+  }
+
+  .header_wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin-left: 145px;
+  }
+
+  .logo h1 {
+    font-family: "Poiret One";
+    font-size: 37px;
+    color: #ffffff;
+  }
+
+  .logo p {
+    font-family: "Alex Brush";
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .top_nav {
+    margin-right: 179px;
+  }
+
+  .nav_item {
+    margin-left: 63px;
+    color: #ffffff;
+  }
+
+  .nav_items {
+    display: flex;
+  }
+
+  /* -- main -- */
+
+  main {
+    background-image: url(./images/main_image.png);
+    background-size: cover;
+    background-position: center;
+    height: 1034px;
+  }
+
+  .main_title {
+    background-color: #3fb9dc;
+    width: 612px;
+    height: 190px;
+    position: relative;
+    top: 285px;
+  }
+
+  .main_title p {
+    color: white;
+  }
+
+  .main_name {
+    font-size: 35px;
+    position: relative;
+    top: 27px;
+    left: 200px;
+  }
+
+  .main_sub_name {
+    font-size: 35px;
+    position: relative;
+    top: 27px;
+    left: 200px;
+  }
+
+  .sub_title {
+    font-family: "Alex Brush";
+    font-size: 30px;
+    position: relative;
+    top: 22px;
+    left: 320px;
+  }
+
+  /* -- Whta's New -- */
+
+  #new {
+    background-color: #daeafd;
+  }
+
+  .new_wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+  .new_title {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 35px;
+    color: #2bc1f8;
+    padding-top: 62px;
+  }
+
+  .new_content {
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notice {
+    margin-left: 86px;
+  }
+
+  .date {
+    display: flex;
+  }
+
+  .day {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #707070;
+    font-weight: lighter;
+    margin-right: 20px;
+  }
+
+  dt:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
+  .content_name_box {
+    text-align: center;
+    width: 104px;
+    height: 24px;
+    background-color: #5ea709;
+  }
+
+  .content_name {
+    font-family: "Lato";
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .content_title {
+    font-family: "Kozuka Gothic Pr6N";
+    font-size: 20px;
+    margin-top: 14px;
+  }
+
+  .new_button {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .view_button button {
+    background-color: #2bc1f8;
+    width: 240px;
+    height: 57px;
+    text-align: center;
+  }
+
+  .view_button button a {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  /* -- Instagram -- */
+
+  .instagram {
+    background-image: url(./images/insta.png);
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+  }
+
+  .insta_title {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 35px;
+    color: #ffffff;
+    padding-top: 60px;
+  }
+
+  .insta_image {
+    margin-top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+
+  .image_item {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* -- Youtube -- */
+
+  .youtube {
+    background-color: #daeafd;
+  }
+
+  .youtube_wrapper {
+    width: 840px;
+    margin: 0 auto;
+  }
+
+  .youtube_images {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .youtube_logo {
+    position: absolute;
+    top: 250px;
+    left: 30%;
+  }
+
+  /* -- Profile -- */
+
+  #profile {
+    background-image: url(./images/profile.png);
+    background-size: cover;
+    background-position: center;
+    height: 406px;
+  }
+
+  .profile_wrapper {
+    width: 60%;
+    margin-left: 100px;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  .profile_title {
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 35px;
+  }
+
+  .profile_name {
+    color: #ffffff;
+    font-family: "Meiryo";
+    font-size: 35px;
+    padding: 20px 0;
+  }
+
+  .profile_button {
+    padding-bottom: 90px;
+  }
+
+  /* -- powered by -- */
+
+  .powered {
+    background-color: #2bc1f8;
+    height: 280px;
+  }
+
+  .powered_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 55px;
+  }
+
+  .powered_title {
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 35px;
+    padding-top: 50px;
+  }
+
+  .powered_list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .back_white_box {
+    width: 250px;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* -- footer -- */
+
+  footer {
+    background-image: url(./images/insta.png);
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+  }
+
+  .footer_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer_name_container {
+    padding-top: 180px;
+    text-align: center;
+  }
+
+  .footer_name {
+    font-family: "Poiret One";
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .footer_subname {
+    font-family: "Alex Brush";
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .footer_nav_container {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .footer_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_list li {
+    margin: 0 30px;
+  }
+
+  .footer_list li a {
+    color: #ffffff;
+  }
+
+  .footer_icon_container {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons {
+    display: flex;
+    align-content: space-between;
+  }
+
+  .icon_item:nth-child(2) {
+    padding: 0 40px;
+  }
 }
 
-/* -- header -- */
-
-header {
-  width: 100%;
-  position: absolute;
-}
-
-.header_wrapper {
-  width: 1366px;
-  margin: 0 auto;
-  padding-top: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  margin-left: 145px;
-}
-
-.logo h1 {
-  font-family: "Poiret One";
-  font-size: 37px;
-  color: #ffffff;
-}
-
-.logo p {
-  font-family: "Alex Brush";
-  font-size: 18px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.top_nav {
-  margin-right: 179px;
-}
-
-.nav_item {
-  margin-left: 63px;
-  color: #ffffff;
-}
-
-.nav_items {
-  display: flex;
-}
-
-/* -- main -- */
-
-main {
-  background-image: url(./images/main_image.png);
-  background-size: cover;
-  background-position: center;
-  height: 1034px;
-}
-
-.main_title {
-  background-color: #3fb9dc;
-  width: 612px;
-  height: 190px;
-  position: relative;
-  top: 285px;
-}
-
-.main_title p {
-  color: white;
-}
-
-.main_name {
-  font-size: 35px;
-  position: relative;
-  top: 27px;
-  left: 200px;
-}
-
-.main_sub_name {
-  font-size: 35px;
-  position: relative;
-  top: 27px;
-  left: 200px;
-}
-
-.sub_title {
-  font-family: "Alex Brush";
-  font-size: 30px;
-  position: relative;
-  top: 22px;
-  left: 320px;
-}
-
-/* -- Whta's New -- */
-
-#new {
-  background-color: #daeafd;
-}
-
-.new_wrapper {
-  width: 1366px;
-  margin: 0 auto;
-  height: 600px;
-}
-
-.new_title {
-  text-align: center;
-  font-family: "Nunito";
-  font-size: 35px;
-  color: #2bc1f8;
-  padding-top: 62px;
-}
-
-.new_content {
-  display: flex;
-  width: 60%;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.notice {
-  margin-left: 86px;
-}
-
-.date {
-  display: flex;
-}
-
-.day {
-  font-family: "Lato";
-  font-size: 18px;
-  color: #707070;
-  font-weight: lighter;
-  margin-right: 20px;
-}
-
-dt:nth-child(n + 2) {
-  margin-top: 30px;
-}
-
-.content_name_box {
-  text-align: center;
-  width: 104px;
-  height: 24px;
-  background-color: #5ea709;
-}
-
-.content_name {
-  font-family: "Lato";
-  font-size: 15px;
-  color: #ffffff;
-  font-weight: lighter;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.content_title {
-  font-family: "Kozuka Gothic Pr6N";
-  font-size: 20px;
-  margin-top: 14px;
-}
-
-.new_button {
-  display: flex;
-  align-items: flex-end;
-}
-
-.view_button button {
-  background-color: #2bc1f8;
-  width: 240px;
-  height: 57px;
-  text-align: center;
-}
-
-.view_button button a {
-  font-family: "Lato";
-  font-size: 18px;
-  color: #ffffff;
-}
-
-/* -- Instagram -- */
-
-.instagram {
-  background-image: url(./images/insta.png);
-  background-size: cover;
-  background-position: center;
-  height: 870px;
-}
-
-.insta_title {
-  text-align: center;
-  font-family: "Nunito";
-  font-size: 35px;
-  color: #ffffff;
-  padding-top: 60px;
-}
-
-.insta_image {
-  margin-top: 37px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 60%;
-}
-
-.image_item {
-  padding: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* -- Youtube -- */
-
-.youtube {
-  background-color: #daeafd;
-}
-
-.youtube_wrapper {
-  width: 840px;
-  margin: 0 auto;
-}
-
-.youtube_images {
-  padding: 70px 0;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.youtube_logo {
-  position: absolute;
-  top: 250px;
-  left: 30%;
-}
-
-/* -- Profile -- */
-
-#profile {
-  background-image: url(./images/profile.png);
-  background-size: cover;
-  background-position: center;
-  height: 406px;
-}
-
-.profile_wrapper {
-  width: 60%;
-  margin-left: 100px;
-  padding-top: 90px;
-  text-align: center;
-}
-
-.profile_title {
-  color: #ffffff;
-  font-family: "Lora";
-  font-size: 35px;
-}
-
-.profile_name {
-  color: #ffffff;
-  font-family: "Meiryo";
-  font-size: 35px;
-  padding: 20px 0;
-}
-
-.profile_button {
-  padding-bottom: 90px;
-}
-
-/* -- powered by -- */
-
-.powered {
-  background-color: #2bc1f8;
-  height: 280px;
-}
-
-.powered_wrapper {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 55px;
-}
-
-.powered_title {
-  color: #ffffff;
-  font-family: "Lora";
-  font-size: 35px;
-  padding-top: 50px;
-}
-
-.powered_list {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.back_white_box {
-  width: 250px;
-  height: 90px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* -- footer -- */
-
-footer {
-  background-image: url(./images/insta.png);
-  background-size: cover;
-  background-position: center;
-  height: 870px;
-}
-
-.footer_wrapper {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.footer_name_container {
-  padding-top: 180px;
-  text-align: center;
-}
-
-.footer_name {
-  font-family: "Poiret One";
-  font-size: 50px;
-  color: #ffffff;
-}
-
-.footer_subname {
-  font-family: "Alex Brush";
-  font-size: 24px;
-  color: #ffffff;
-}
-
-.footer_nav_container {
-  display: flex;
-  padding-top: 40px;
-}
-
-.footer_list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer_list li {
-  margin: 0 30px;
-}
-
-.footer_list li a {
-  color: #ffffff;
-}
-
-.footer_icon_container {
-  padding-top: 130px;
-  display: flex;
-  justify-content: center;
-}
-
-.icons {
-  display: flex;
-  align-content: space-between;
-}
-
-.icon_item:nth-child(2) {
-  padding: 0 40px;
+/* -- SP -- */
+
+@media screen and (max-width: 750px) {
+  header {
+    width: 100%;
+    background-color: rgb(66, 66, 66, 0.5);
+    position: absolute;
+  }
+
+  .header_wrapper {
+    height: 117px;
+  }
+
+  .logo {
+    padding-top: 27px;
+    padding-left: 5%;
+  }
+
+  .logo h1 {
+    font-family: "Poiret One";
+    font-size: 37px;
+    color: #ffffff;
+  }
+
+  .logo p {
+    font-family: "Alex Brush";
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  .top_nav {
+    display: none;
+  }
+
+  /* -- main -- */
+
+  main {
+    background-image: url(./images/main_image.png);
+    background-size: cover;
+    background-position: center;
+    height: 698px;
+  }
+
+  .main_title {
+    background-color: rgb(43, 193, 248, 0.7);
+    width: 60%;
+    height: 190px;
+    position: relative;
+    top: 300px;
+  }
+
+  .main_title p {
+    color: white;
+  }
+
+  .main_name {
+    font-size: 35px;
+    position: relative;
+    top: 40px;
+    left: 20%;
+  }
+
+  .main_sub_name {
+    font-size: 35px;
+    position: relative;
+    top: 32px;
+    left: 20%;
+  }
+
+  .sub_title {
+    font-family: "Alex Brush";
+    font-size: 30px;
+    position: relative;
+    top: 27px;
+    left: 50%;
+  }
+
+  /* -- Whta's New -- */
+
+  #new {
+    background-color: #daeafd;
+  }
+
+  .new_wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+  .new_title {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 35px;
+    color: #2bc1f8;
+    padding-top: 62px;
+  }
+
+  .new_content {
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notice {
+    margin-left: 86px;
+  }
+
+  .date {
+    display: flex;
+  }
+
+  .day {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #707070;
+    font-weight: lighter;
+    margin-right: 20px;
+  }
+
+  dt:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+
+  .content_name_box {
+    text-align: center;
+    width: 104px;
+    height: 24px;
+    background-color: #5ea709;
+  }
+
+  .content_name {
+    font-family: "Lato";
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .content_title {
+    font-family: "Kozuka Gothic Pr6N";
+    font-size: 20px;
+    margin-top: 14px;
+  }
+
+  .new_button {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .view_button button {
+    background-color: #2bc1f8;
+    width: 240px;
+    height: 57px;
+    text-align: center;
+  }
+
+  .view_button button a {
+    font-family: "Lato";
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  /* -- Instagram -- */
+
+  .instagram {
+    background-image: url(./images/insta.png);
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+  }
+
+  .insta_title {
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 35px;
+    color: #ffffff;
+    padding-top: 60px;
+  }
+
+  .insta_image {
+    margin-top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+
+  .image_item {
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* -- Youtube -- */
+
+  .youtube {
+    background-color: #daeafd;
+  }
+
+  .youtube_wrapper {
+    width: 840px;
+    margin: 0 auto;
+  }
+
+  .youtube_images {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .youtube_logo {
+    position: absolute;
+    top: 250px;
+    left: 30%;
+  }
+
+  /* -- Profile -- */
+
+  #profile {
+    background-image: url(./images/profile.png);
+    background-size: cover;
+    background-position: center;
+    height: 406px;
+  }
+
+  .profile_wrapper {
+    width: 60%;
+    margin-left: 100px;
+    padding-top: 90px;
+    text-align: center;
+  }
+
+  .profile_title {
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 35px;
+  }
+
+  .profile_name {
+    color: #ffffff;
+    font-family: "Meiryo";
+    font-size: 35px;
+    padding: 20px 0;
+  }
+
+  .profile_button {
+    padding-bottom: 90px;
+  }
+
+  /* -- powered by -- */
+
+  .powered {
+    background-color: #2bc1f8;
+    height: 280px;
+  }
+
+  .powered_wrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 55px;
+  }
+
+  .powered_title {
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 35px;
+    padding-top: 50px;
+  }
+
+  .powered_list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .back_white_box {
+    width: 250px;
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* -- footer -- */
+
+  footer {
+    background-image: url(./images/insta.png);
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+  }
+
+  .footer_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer_name_container {
+    padding-top: 180px;
+    text-align: center;
+  }
+
+  .footer_name {
+    font-family: "Poiret One";
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .footer_subname {
+    font-family: "Alex Brush";
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .footer_nav_container {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .footer_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_list li {
+    margin: 0 30px;
+  }
+
+  .footer_list li a {
+    color: #ffffff;
+  }
+
+  .footer_icon_container {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons {
+    display: flex;
+    align-content: space-between;
+  }
+
+  .icon_item:nth-child(2) {
+    padding: 0 40px;
+  }
+
+  * {
+    float: none;
+    position: static;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
