@@ -52,7 +52,7 @@ body {
 
   }
 
-  &__logo2 {
+  &__official {
     position: absolute;
     top: 283px;
 
@@ -64,13 +64,17 @@ body {
   }
 }
 
-.contents {
+main {
   width: 100%;
   height: 600px;
   background: rgb(204, 233, 242);
   position: relative;
+}
 
-  &__txt {
+.main {
+ 
+
+  &__title {
     text-align: center;
     font-size: 2.2em;
     color: #00d0ff;
@@ -89,18 +93,11 @@ body {
       height: 330px;
     }
   }
-
-  .notice{
-    width: 100%;
-    .tour{
+    .date{
       display: flex;
-      
-  
-      &__news {
-        padding-left: 30%;
-      }
-  
+      position: absolute;
+      left: 50%;
     }
+
   }
 
-}
