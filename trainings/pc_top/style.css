@@ -201,6 +201,7 @@ dt:nth-child(n + 2) {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 60%;
 }
