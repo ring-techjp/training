@@ -316,12 +316,13 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
   }
 
   .footer_wrapper {
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,6 +377,11 @@
 
   .icon_item:nth-child(2) {
     padding: 0 40px;
+  }
+
+  .copy_right p {
+    margin-top: 60px;
+    color: #ffffff;
   }
 }
 
@@ -668,12 +674,12 @@
     background-image: url(./images/profile.png);
     background-size: cover;
     background-position: center;
-    height: 406px;
+    height: auto;
   }
 
   .profile_wrapper {
     width: 60%;
-    margin-left: 100px;
+    margin-left: 5%;
     padding-top: 90px;
     text-align: center;
   }
@@ -699,11 +705,11 @@
 
   .powered {
     background-color: #2bc1f8;
-    height: 280px;
+    height: auto;
   }
 
   .powered_wrapper {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 55px;
@@ -717,9 +723,10 @@
   }
 
   .powered_list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 44px;
     justify-content: center;
-    justify-content: space-between;
     margin-top: 40px;
   }
 
@@ -738,12 +745,13 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
   }
 
   .footer_wrapper {
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,6 +783,7 @@
   .footer_list {
     display: flex;
     justify-content: center;
+    margin-top: 65px;
   }
 
   .footer_list li {
@@ -783,6 +792,7 @@
 
   .footer_list li a {
     color: #ffffff;
+    font-size: 24px;
   }
 
   .footer_icon_container {
@@ -794,10 +804,11 @@
   .icons {
     display: flex;
     align-content: space-between;
+    align-items: center;
   }
 
   .icon_item:nth-child(2) {
-    padding: 0 40px;
+    padding: 0 60px;
   }
 
   * {
@@ -805,8 +816,13 @@
     position: static;
   }
 
-  img {
-    max-width: 100%;
+  .icon_item a img {
+    width: 47px;
     height: auto;
+  }
+
+  .copy_right p {
+    margin-top: 60px;
+    color: #ffffff;
   }
 }
