@@ -322,7 +322,7 @@
   .footer_wrapper {
     width: 60%;
     margin: 0 auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,11 +378,11 @@
   .icon_item:nth-child(2) {
     padding: 0 40px;
   }
-}
 
-.copy_right p {
-  margin-top: 60px;
-  color: #ffffff;
+  .copy_right p {
+    margin-top: 60px;
+    color: #ffffff;
+  }
 }
 
 /* -- SP -- */
@@ -819,5 +819,10 @@
   .icon_item a img {
     width: 47px;
     height: auto;
+  }
+
+  .copy_right p {
+    margin-top: 60px;
+    color: #ffffff;
   }
 }
