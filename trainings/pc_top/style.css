@@ -390,6 +390,8 @@
 
   .header_wrapper {
     height: 117px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo {
@@ -409,8 +411,41 @@
     color: #ffffff;
   }
 
-  .top_nav {
+  .nav_items {
     display: none;
+  }
+
+  /* ハンバーガーメニュー */
+
+  .openbtn3 {
+    position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 71px;
+    height: 71px;
+    margin-right: 36px;
+    margin-top: 10px;
+  }
+
+  .openbtn3 span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    height: 4.5px;
+    border-radius: 2px;
+    background: #fff;
+    width: 100%;
+  }
+
+  .openbtn3 span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn3 span:nth-of-type(2) {
+    top: 38px;
+  }
+
+  .openbtn3 span:nth-of-type(3) {
+    top: 60px;
   }
 
   /* -- main -- */
