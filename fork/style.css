@@ -167,4 +167,76 @@ main {
   width: 262px;
   height: 262px;
 }
+
+#youtube {
+  width: 100%;
+  height: 566px;
+  position: relative;
+  background-color: #DAEAFD;
+}
+
+#youtube .youtube .youtube__img {
+  width: 269px;
+  height: 60px;
+  position: absolute;
+  left: 41%;
+  top: 45%;
+}
+
+#youtube .youtube__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#youtube .youtube__item img {
+  width: 411px;
+  height: 411px;
+  margin-top: 20%;
+}
+
+#profile {
+  width: 100%;
+  height: 406px;
+  position: relative;
+}
+
+#profile .profile__bg img {
+  width: 100%;
+  height: 406px;
+}
+
+#profile .profile {
+  font-size: 35px;
+  font-family: "Lora";
+  color: #FFFFFF;
+}
+
+#profile .profile__title {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+#profile .profile__subtitle {
+  position: absolute;
+  top: 45%;
+  left: 22.3%;
+  font-family: "Meiryo";
+  font-size: 35px;
+}
+
+#profile .profile__view__button {
+  position: absolute;
+  top: 65%;
+  left: 27%;
+  font-size: 20px;
+  font-family: "Lato";
+  color: #FFFFFF;
+  background-color: #2BC1F8;
+  padding: 8px 33px;
+}
 /*# sourceMappingURL=style.css.map */
