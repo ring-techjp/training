@@ -421,7 +421,7 @@
 
   /* ハンバーガーメニュー */
 
-  .openbtn3 {
+  .sp_nav_button {
     position: relative; /*ボタン内側の基点となるためrelativeを指定*/
     cursor: pointer;
     width: 71px;
@@ -430,7 +430,7 @@
     margin-top: 10px;
   }
 
-  .openbtn3 span {
+  .sp_nav_button span {
     display: inline-block;
     transition: all 0.4s; /*アニメーションの設定*/
     position: absolute;
@@ -525,10 +525,7 @@
     padding-bottom: 80px;
   }
 
-  .new_image {
-    width: 100%;
-  }
-
+  .new_image,
   .new_image img {
     width: 100%;
   }
