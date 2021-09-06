@@ -101,7 +101,7 @@
   }
 
   .new_wrapper {
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
     height: 600px;
   }
@@ -116,10 +116,8 @@
 
   .new_content {
     display: flex;
-    width: 60%;
+    justify-content: center;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .notice {
@@ -188,7 +186,12 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
+  }
+
+  .insta_wrapper {
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .insta_title {
@@ -201,16 +204,13 @@
 
   .insta_image {
     margin-top: 37px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    gap: 80px;
   }
 
   .image_item {
-    padding: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,29 +605,31 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
+  }
+
+  .insta_wrapper {
+    width: 100%;
+    padding-bottom: 110px;
   }
 
   .insta_title {
     text-align: center;
     font-family: "Nunito";
-    font-size: 35px;
+    font-size: 40px;
     color: #ffffff;
     padding-top: 60px;
   }
 
   .insta_image {
-    margin-top: 37px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    margin-top: 65px;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 60px;
   }
 
   .image_item {
-    padding: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -640,21 +642,27 @@
   }
 
   .youtube_wrapper {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .youtube_images {
     padding: 70px 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
+  }
+
+  .youtube_images img {
+    width: 375px;
   }
 
   .youtube_logo {
     position: absolute;
     top: 250px;
     left: 30%;
+    width: 246px;
   }
 
   /* -- Profile -- */
