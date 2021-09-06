@@ -382,6 +382,10 @@
 /* -- SP -- */
 
 @media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+
   header {
     width: 100%;
     background-color: rgb(66, 66, 66, 0.5);
@@ -498,29 +502,41 @@
   }
 
   .new_wrapper {
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
-    height: 600px;
+    height: auto;
   }
 
   .new_title {
     text-align: center;
     font-family: "Nunito";
-    font-size: 35px;
+    font-size: 40px;
     color: #2bc1f8;
     padding-top: 62px;
   }
 
   .new_content {
     display: flex;
-    width: 60%;
+    flex-direction: column;
+    width: 80%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 80px;
+  }
+
+  .new_image {
+    width: 100%;
+  }
+
+  .new_image img {
+    width: 100%;
   }
 
   .notice {
-    margin-left: 86px;
+    width: 60%;
+    margin-top: 70px;
+    margin-right: auto;
   }
 
   .date {
@@ -529,10 +545,10 @@
 
   .day {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 28px;
     color: #707070;
     font-weight: lighter;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   dt:nth-child(n + 2) {
@@ -540,42 +556,46 @@
   }
 
   .content_name_box {
+    position: relative;
     text-align: center;
-    width: 104px;
-    height: 24px;
+    width: 170px;
+    height: 40px;
     background-color: #5ea709;
   }
 
-  .content_name {
+  .content_name_box .content_name {
     font-family: "Lato";
-    font-size: 15px;
+    font-size: 24px;
     color: #ffffff;
     font-weight: lighter;
-    display: inline-block;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
 
   .content_title {
     font-family: "Kozuka Gothic Pr6N";
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 14px;
   }
 
   .new_button {
+    margin-top: 70px;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .view_button button {
     background-color: #2bc1f8;
-    width: 240px;
-    height: 57px;
+    width: 350px;
+    height: 83px;
     text-align: center;
   }
 
   .view_button button a {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 29px;
     color: #ffffff;
   }
 
