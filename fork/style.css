@@ -136,6 +136,8 @@ main {
   width: 100%;
   height: 871px;
   background-image: url(./img/insta_bg.png);
+  background-position: center;
+  background-size: cover;
   margin-top: 36px;
 }
 
@@ -274,5 +276,71 @@ main {
   width: 246px;
   height: 90px;
   background-color: #FFFFFF;
+}
+
+#footer {
+  width: 100%;
+  height: 669px;
+  background-image: url(./img/insta_bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#footer .footer__title {
+  color: #FFFFFF;
+  font-size: 49px;
+  font-family: "Poiret One";
+  position: absolute;
+  left: 39%;
+  top: 16%;
+}
+
+#footer .footer__subtitle {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Alex Brush";
+  position: absolute;
+  left: 45%;
+  top: 26%;
+}
+
+#footer .footer__nav {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .footer__item {
+  color: #FFFFFF;
+  padding: 0 4%;
+}
+
+#footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 46%;
+  top: 60%;
+}
+
+#footer .footer__icon {
+  padding: 0 8%;
+}
+
+#footer .footer__icon img {
+  width: 37px;
+  height: 30px;
+  padding: 0 8%;
 }
 /*# sourceMappingURL=style.css.map */
