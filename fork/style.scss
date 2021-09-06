@@ -258,4 +258,40 @@ main {
 }
 
 
+#powered_by {
+  width: 100%;
+  height: 279px; 
+  position: relative;
+  background-color: #2BC1F8;
+ 
+
+  .powered_by {
+    position: absolute;
+    top: 16%;
+    left: 44%;
+    color: #FFFFFF;
+    font-family: "Lora";
+    font-size: 35px;
+
+    &__container {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 8%;
+    }
+
+    &__item  {
+     margin: 10% auto;
+    
+    img{
+      width: 246px;
+      height: 90px;
+      background-color: #FFFFFF;
+    }
+  }
+  }
+
+  
+}
+
 
