@@ -668,12 +668,12 @@
     background-image: url(./images/profile.png);
     background-size: cover;
     background-position: center;
-    height: 406px;
+    height: auto;
   }
 
   .profile_wrapper {
     width: 60%;
-    margin-left: 100px;
+    margin-left: 5%;
     padding-top: 90px;
     text-align: center;
   }
