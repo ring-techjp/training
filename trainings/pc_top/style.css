@@ -101,7 +101,7 @@
   }
 
   .new_wrapper {
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
     height: 600px;
   }
@@ -116,10 +116,8 @@
 
   .new_content {
     display: flex;
-    width: 60%;
+    justify-content: center;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .notice {
@@ -188,7 +186,12 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
+  }
+
+  .insta_wrapper {
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .insta_title {
@@ -201,16 +204,13 @@
 
   .insta_image {
     margin-top: 37px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    gap: 80px;
   }
 
   .image_item {
-    padding: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,6 +382,10 @@
 /* -- SP -- */
 
 @media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+
   header {
     width: 100%;
     background-color: rgb(66, 66, 66, 0.5);
@@ -390,6 +394,8 @@
 
   .header_wrapper {
     height: 117px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .logo {
@@ -409,8 +415,41 @@
     color: #ffffff;
   }
 
-  .top_nav {
+  .nav_items {
     display: none;
+  }
+
+  /* ハンバーガーメニュー */
+
+  .sp_nav_button {
+    position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+    cursor: pointer;
+    width: 71px;
+    height: 71px;
+    margin-right: 36px;
+    margin-top: 10px;
+  }
+
+  .sp_nav_button span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    height: 4.5px;
+    border-radius: 2px;
+    background: #fff;
+    width: 100%;
+  }
+
+  .openbtn3 span:nth-of-type(1) {
+    top: 15px;
+  }
+
+  .openbtn3 span:nth-of-type(2) {
+    top: 38px;
+  }
+
+  .openbtn3 span:nth-of-type(3) {
+    top: 60px;
   }
 
   /* -- main -- */
@@ -463,29 +502,38 @@
   }
 
   .new_wrapper {
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
-    height: 600px;
+    height: auto;
   }
 
   .new_title {
     text-align: center;
     font-family: "Nunito";
-    font-size: 35px;
+    font-size: 40px;
     color: #2bc1f8;
     padding-top: 62px;
   }
 
   .new_content {
     display: flex;
-    width: 60%;
+    flex-direction: column;
+    width: 80%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 80px;
+  }
+
+  .new_image,
+  .new_image img {
+    width: 100%;
   }
 
   .notice {
-    margin-left: 86px;
+    width: 60%;
+    margin-top: 70px;
+    margin-right: auto;
   }
 
   .date {
@@ -494,10 +542,10 @@
 
   .day {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 28px;
     color: #707070;
     font-weight: lighter;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   dt:nth-child(n + 2) {
@@ -505,42 +553,46 @@
   }
 
   .content_name_box {
+    position: relative;
     text-align: center;
-    width: 104px;
-    height: 24px;
+    width: 170px;
+    height: 40px;
     background-color: #5ea709;
   }
 
-  .content_name {
+  .content_name_box .content_name {
     font-family: "Lato";
-    font-size: 15px;
+    font-size: 24px;
     color: #ffffff;
     font-weight: lighter;
-    display: inline-block;
-    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
 
   .content_title {
     font-family: "Kozuka Gothic Pr6N";
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 14px;
   }
 
   .new_button {
+    margin-top: 70px;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .view_button button {
     background-color: #2bc1f8;
-    width: 240px;
-    height: 57px;
+    width: 350px;
+    height: 83px;
     text-align: center;
   }
 
   .view_button button a {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 29px;
     color: #ffffff;
   }
 
@@ -550,29 +602,31 @@
     background-image: url(./images/insta.png);
     background-size: cover;
     background-position: center;
-    height: 870px;
+    height: auto;
+  }
+
+  .insta_wrapper {
+    width: 100%;
+    padding-bottom: 110px;
   }
 
   .insta_title {
     text-align: center;
     font-family: "Nunito";
-    font-size: 35px;
+    font-size: 40px;
     color: #ffffff;
     padding-top: 60px;
   }
 
   .insta_image {
-    margin-top: 37px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    margin-top: 65px;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 60px;
   }
 
   .image_item {
-    padding: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -585,21 +639,27 @@
   }
 
   .youtube_wrapper {
-    width: 840px;
+    width: 100%;
     margin: 0 auto;
   }
 
   .youtube_images {
     padding: 70px 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
+  }
+
+  .youtube_images img {
+    width: 375px;
   }
 
   .youtube_logo {
     position: absolute;
     top: 250px;
     left: 30%;
+    width: 246px;
   }
 
   /* -- Profile -- */
