@@ -1,0 +1,11 @@
+@import url(/Users/kimurayugofile/Desktop/training/fork/style.css);
+@media screen and (max-width: 750px) {
+  .header {
+    position: relative;
+  }
+  .header img {
+    width: 100%;
+    height: 50%;
+  }
+}
+/*# sourceMappingURL=sp.css.map */
