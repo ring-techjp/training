@@ -1,9 +1,3 @@
-body {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-}
-
 .header {
   position: relative;
 
@@ -65,7 +59,7 @@ body {
 }
 
 main {
-  
+
   height: 600px;
   background: #DAEAFD;
   position: relative;
@@ -77,8 +71,8 @@ main {
     text-align: center;
     font-size: 2.2em;
     color: #2BC1F8;
-     padding-top: 3%;
-    }
+    padding-top: 3%;
+  }
 
   &__img {
     position: absolute;
@@ -100,23 +94,23 @@ main {
     .date {
       position: absolute;
       left: 50%;
-      top: 11%;      
+      top: 11%;
 
       &__tour {
         margin-left: 20%;
         padding: 7px 14px;
-        background-color:#5EA709;
+        background-color: #5EA709;
         font-family: "Lato";
         font-size: 15px;
         color: #FFFFFF;
-        
+
       }
 
       &__news {
         margin: 30px 0;
 
-        font-size:20px;
-        font-family:'Kozuka Gothic Pr6N';
+        font-size: 20px;
+        font-family: 'Kozuka Gothic Pr6N';
       }
 
       &__day {
@@ -139,22 +133,22 @@ main {
   }
 }
 
-#instagram{
-  width:100%;
-  height:871px;
+#instagram {
+  width: 100%;
+  height: 871px;
   background-image: url(./img/insta_bg.png);
   background-position: center;
   background-size: cover;
   margin-top: 36px;
 
- 
+
 
   .instagram {
     position: relative;
-    
-    
 
-    &__title{
+
+
+    &__title {
       position: absolute;
       left: 45%;
       font-size: 35px;
@@ -164,13 +158,13 @@ main {
 
     &__container {
       display: grid;
-      justify-content:center;
-      grid-template-columns: 262px 262px 262px ;
+      justify-content: center;
+      grid-template-columns: 262px 262px 262px;
       padding-top: 12%;
       gap: 8% 3%;
     }
 
-    &__item img { 
+    &__item img {
       width: 262px;
       height: 262px;
 
@@ -187,7 +181,7 @@ main {
 
 
 
-  .youtube{
+  .youtube {
 
 
     .youtube__img {
@@ -203,9 +197,10 @@ main {
     &__container {
       display: flex;
       justify-content: center;
-      
+
     }
-    &__item img{
+
+    &__item img {
       width: 411px;
       height: 411px;
       margin-top: 20%;
@@ -220,7 +215,7 @@ main {
 
 
   .profile__bg img {
-    width:100%;
+    width: 100%;
     height: 406px;
   }
 
@@ -228,7 +223,7 @@ main {
     font-size: 35px;
     font-family: "Lora";
     color: #FFFFFF;
-    
+
 
     &__title {
       position: absolute;
@@ -247,7 +242,7 @@ main {
 
     &__view__button {
       position: absolute;
-      top:65%;
+      top: 65%;
       left: 27%;
       font-size: 20px;
       font-family: "Lato";
@@ -262,10 +257,10 @@ main {
 
 #powered_by {
   width: 100%;
-  height: 279px; 
+  height: 279px;
   position: relative;
   background-color: #2BC1F8;
- 
+
 
   .powered_by {
     position: absolute;
@@ -282,22 +277,22 @@ main {
       padding: 0 8%;
     }
 
-    &__item  {
-     margin: 10% auto;
-    
-    img{
-      width: 246px;
-      height: 90px;
-      background-color: #FFFFFF;
+    &__item {
+      margin: 10% auto;
+
+      img {
+        width: 246px;
+        height: 90px;
+        background-color: #FFFFFF;
+      }
     }
-  }
   }
 }
 
 #footer {
   width: 100%;
   height: 669px;
- 
+
   background-image: url(./img/insta_bg.png);
   background-position: center;
   background-size: cover;
@@ -323,6 +318,7 @@ main {
       left: 45%;
       top: 26%;
     }
+
     &__nav {
       width: 100%;
       position: absolute;
@@ -333,7 +329,7 @@ main {
 
     &__item {
       color: #FFFFFF;
-      padding:0 4%;
+      padding: 0 4%;
 
     }
 
@@ -343,19 +339,129 @@ main {
       position: absolute;
       left: 46%;
       top: 60%;
-      
+
     }
 
-    &__icon  {
-      padding: 0 8%;  
-    img{
-      width: 37px;
-      height: 30px;
+    &__icon {
       padding: 0 8%;
 
+      img {
+        width: 37px;
+        height: 30px;
+        padding: 0 8%;
+
+      }
     }
-  }
   }
 
 }
 
+/****************************************************
+SP対応
+****************************************************/
+
+@media screen and (max-width:750px) {
+  body {
+    width: 100%;
+  }
+
+
+  .header {
+
+    img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+    }
+
+
+    &__left {
+
+      img {
+        width: 212px;
+        height: 67px;
+        margin: 30px;
+        position: absolute;
+        top: 0;
+        left: 10%;
+      }
+    }
+
+    &__right {
+      margin-top: 52px;
+      position: absolute;
+      top: 0;
+      right: 15%;
+
+
+      & ul {
+        display: flex;
+        display: none;
+
+        li {
+          color: #FFFFFF;
+        }
+
+        & li:nth-child(2) {
+          padding: 0 72px 0 50px;
+
+        }
+      }
+    }
+
+    &__official {
+      position: absolute;
+      top: 60%;
+
+
+      & img {
+        width: 440px;
+        height: 190px;
+      }
+    }
+  }
+
+
+  .mobaile-menu__cover {
+    height: 117px;
+    background-color: rgba(66, 66, 66, 0.9);
+
+  }
+
+  .mobile-menu__btn {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    height: 71px;
+    width: 71px;
+    margin-left: 80%;
+    margin-top: -50%;
+
+
+    & span {
+      display: inline-block;
+      position: absolute;
+      height: 4.5px;
+      border-radius: 2px;
+      background: #fff;
+      width: 100%;
+
+      &:nth-of-type(1) {
+        top: 15px;
+
+      }
+
+      &:nth-of-type(2) {
+        top: 38px;
+      }
+
+      &:nth-of-type(3) {
+        top: 60px;
+      }
+    }
+
+
+  }
+
+
+}
