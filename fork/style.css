@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 752px) {
   body {
     width: 100%;
   }
@@ -19,6 +19,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding-top: 30px;
+    margin: 0 auto;
   }
   .header__wrapper .header__left img {
     width: 212px;
@@ -26,7 +27,7 @@
     margin-left: 180px;
   }
   .header__wrapper .header__right {
-    margin-right: 180px;
+    margin-left: 180px;
   }
   .header__wrapper .header__right ul {
     display: -webkit-box;
@@ -47,13 +48,17 @@
   }
   .top__official {
     position: absolute;
-    top: 250px;
+    top: 40%;
   }
   .top__official img {
     width: 612px;
     height: 190px;
   }
   main {
+    width: 100%;
+    height: 100%;
+  }
+  .Whats_New__container {
     height: 600px;
     background: #DAEAFD;
     position: relative;
@@ -122,7 +127,6 @@
     background-image: url(./img/insta_bg.png);
     background-position: center;
     background-size: cover;
-    margin-top: 36px;
   }
   #instagram .instagram {
     position: relative;
@@ -303,15 +307,15 @@
 }
 
 /****************************************************
-SP対応
-****************************************************/
-@media screen and (max-width: 750px) {
+  SP対応
+  ****************************************************/
+@media screen and (max-width: 751px) {
   body {
     width: 100%;
   }
   header {
     position: absolute;
-    width: 100%;
+    width: 750px;
   }
   .header__wrapper {
     position: relative;
@@ -351,12 +355,12 @@ SP対応
     background-image: url(./img/img30.png);
     background-position: center;
     background-size: cover;
-    width: 800px;
+    width: 750px;
     height: 700px;
   }
   .top__official {
     position: absolute;
-    top: 50%;
+    top: 60%;
   }
   .top__official img {
     width: 80%;
@@ -391,30 +395,33 @@ SP対応
     top: 60px;
   }
   main {
-    height: 600px;
+    width: 100%;
+    height: 100%;
+  }
+  .Whats_New__container {
+    height: 1442px;
+    width: 750px;
     background: #DAEAFD;
     position: relative;
   }
   .main__title {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 40px;
     color: #2BC1F8;
     padding-top: 3%;
   }
   .main__img {
-    position: absolute;
-    top: 25%;
-    left: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10%;
   }
   .main__img img {
-    width: 330px;
-    height: 330px;
+    width: 569px;
+    height: 569px;
   }
   .main #notice {
     position: relative;
@@ -422,44 +429,45 @@ SP対応
   }
   .main #notice .date {
     position: absolute;
-    left: 50%;
+    left: 14%;
     top: 11%;
   }
   .main #notice .date__tour {
     margin-left: 20%;
-    padding: 7px 14px;
+    padding: 7px 50px;
     background-color: #5EA709;
     font-family: "Lato";
-    font-size: 15px;
     color: #FFFFFF;
   }
   .main #notice .date__news {
     margin: 30px 0;
-    font-size: 20px;
+    font-size: 28px;
     font-family: 'Kozuka Gothic Pr6N';
   }
   .main #notice .date__day {
     font-family: "Lato";
-    font-size: 18px;
+    font-size: 28px;
     color: #707070;
   }
   .main #notice .view__button {
     position: absolute;
-    left: 69%;
-    top: 75%;
+    left: 40%;
+    top: 50%;
     background-color: #2BC1F8;
-    padding: 8px 33px;
-    font-size: 20px;
+    width: 351px;
+    height: 81px;
+    padding: 16px;
+    text-align: center;
+    font-size: 29px;
     font-family: "Lato";
     color: #FFFFFF;
   }
   #instagram {
     width: 100%;
-    height: 871px;
+    height: 1217px;
     background-image: url(./img/insta_bg.png);
     background-position: center;
     background-size: cover;
-    margin-top: 36px;
   }
   #instagram .instagram {
     position: relative;
@@ -477,9 +485,9 @@ SP対応
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: 262px 262px 262px;
-        grid-template-columns: 262px 262px 262px;
-    padding-top: 12%;
+    -ms-grid-columns: 262px 262px;
+        grid-template-columns: 262px 262px;
+    padding-top: 30%;
     gap: 8% 3%;
   }
   #instagram .instagram__item img {
