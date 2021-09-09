@@ -698,23 +698,20 @@
 
     .powered_by {
       text-align: center;
-      padding-top: 10%;
+      padding-top: 8%;
       color: #FFFFFF;
       font-family: "Lora";
       font-size: 35px;
 
       &__container {
-        height: 100%;
         display: flex;
         display: grid;
         grid-template-columns: 273px 273px;
-        justify-content: space-around;
-        padding: 13%;
-        padding-bottom: 20%;
+        padding: 5% 12%;
       }
 
       &__item {
-       
+       padding: 8%;
 
         img {
           width: 246px;

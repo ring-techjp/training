@@ -562,13 +562,12 @@
   }
   #powered_by .powered_by {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 8%;
     color: #FFFFFF;
     font-family: "Lora";
     font-size: 35px;
   }
   #powered_by .powered_by__container {
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -576,10 +575,10 @@
     display: grid;
     -ms-grid-columns: 273px 273px;
         grid-template-columns: 273px 273px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 13%;
-    padding-bottom: 20%;
+    padding: 5% 12%;
+  }
+  #powered_by .powered_by__item {
+    padding: 8%;
   }
   #powered_by .powered_by__item img {
     width: 246px;
