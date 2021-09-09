@@ -48,7 +48,7 @@
   }
   .top__official {
     position: absolute;
-    top: 40%;
+    top: 48%;
   }
   .top__official img {
     width: 612px;
@@ -65,7 +65,7 @@
   }
   .main__title {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 35px;
     color: #2BC1F8;
     padding-top: 3%;
   }
@@ -183,6 +183,7 @@
     width: 100%;
     height: 406px;
     position: relative;
+    background-image: url(./img/profile_bg.png);
   }
   #profile .profile__bg img {
     width: 100%;
@@ -258,28 +259,23 @@
     color: #FFFFFF;
     font-size: 49px;
     font-family: "Poiret One";
-    position: absolute;
-    left: 39%;
-    top: 16%;
+    text-align: center;
+    padding-top: 8%;
   }
   #footer .footer__subtitle {
     color: #FFFFFF;
     font-size: 24px;
     font-family: "Alex Brush";
-    position: absolute;
-    left: 45%;
-    top: 26%;
+    text-align: center;
   }
   #footer .footer__nav {
-    width: 100%;
-    position: absolute;
-    top: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 8%;
   }
   #footer .footer__item {
     color: #FFFFFF;
@@ -292,12 +288,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: absolute;
-    left: 46%;
-    top: 60%;
+    padding-top: 16%;
   }
-  #footer .footer__icon {
-    padding: 0 8%;
+  #footer .footer__icon:nth-child(2) {
+    padding: 0 3%;
   }
   #footer .footer__icon img {
     width: 37px;
@@ -474,7 +468,7 @@
   }
   #instagram .instagram__title {
     position: absolute;
-    left: 45%;
+    left: 38%;
     font-size: 35px;
     color: #FFFFFF;
     margin-top: 59px;
@@ -502,9 +496,9 @@
   }
   #youtube .youtube .youtube__img {
     width: 269px;
-    height: 60px;
+    height: 55px;
     position: absolute;
-    left: 41%;
+    left: 32%;
     top: 45%;
   }
   #youtube .youtube__container {
@@ -516,14 +510,18 @@
             justify-content: center;
   }
   #youtube .youtube__item img {
-    width: 411px;
-    height: 411px;
-    margin-top: 20%;
+    width: 375px;
+    height: 375px;
+    margin-top: 24%;
   }
   #profile {
     width: 100%;
     height: 406px;
     position: relative;
+    background-image: url(./img/profile_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-position-x: 64%;
   }
   #profile .profile__bg img {
     width: 100%;
@@ -558,14 +556,13 @@
   }
   #powered_by {
     width: 100%;
-    height: 279px;
+    height: 469px;
     position: relative;
     background-color: #2BC1F8;
   }
   #powered_by .powered_by {
-    position: absolute;
-    top: 16%;
-    left: 44%;
+    text-align: center;
+    padding-top: 10%;
     color: #FFFFFF;
     font-family: "Lora";
     font-size: 35px;
@@ -575,12 +572,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 273px 273px;
+        grid-template-columns: 273px 273px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: 0 8%;
-  }
-  #powered_by .powered_by__item {
-    margin: 10% auto;
+    padding: 13%;
+    padding-bottom: 20%;
   }
   #powered_by .powered_by__item img {
     width: 246px;
@@ -599,22 +598,17 @@
     color: #FFFFFF;
     font-size: 49px;
     font-family: "Poiret One";
-    position: absolute;
-    left: 39%;
-    top: 16%;
+    text-align: center;
+    padding-top: 16%;
   }
   #footer .footer__subtitle {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 23px;
     font-family: "Alex Brush";
-    position: absolute;
-    left: 45%;
-    top: 26%;
+    text-align: center;
   }
   #footer .footer__nav {
     width: 100%;
-    position: absolute;
-    top: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -624,7 +618,7 @@
   }
   #footer .footer__item {
     color: #FFFFFF;
-    padding: 0 4%;
+    padding: 8%;
   }
   #footer .footer__container {
     display: -webkit-box;
@@ -633,12 +627,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: absolute;
-    left: 46%;
-    top: 60%;
   }
   #footer .footer__icon {
-    padding: 0 8%;
+    padding: 16% 4%;
   }
   #footer .footer__icon img {
     width: 37px;
